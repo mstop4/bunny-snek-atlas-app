@@ -3,6 +3,6 @@
   width: 100%;
   height: 100%;
   grid-template-columns: minmax(250px, 1fr) 7fr;
-  grid-template-rows: minmax(50px, 1fr) 7.5fr 7.5fr;
+  grid-template-rows: minmax(50px, 1fr) 6fr 9fr;
   background-color: #202020;
 }

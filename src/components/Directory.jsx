@@ -1,14 +1,15 @@
 import './Directory.css';
-import placesJson from '../data/placesOfInterest.json';
 
 const RegionSection = (props) => {
-  const { region } = props;
+  const { region, handlePlaceClick } = props;
   const placesList = [];
 
   for (const place of region.places) {
     placesList.push(
       <li key={place.name}>
-        <a className="Directory-placeLink" href="">{place.name}</a>
+        <span className="Directory-placeLink" onClick={() => handlePlaceClick(place.name)}>
+          {place.name}
+        </span>
       </li>
     );
   }
@@ -23,14 +24,20 @@ const RegionSection = (props) => {
   )
 }
 
-const Directory = () => {
+const Directory = (props) => {
+  const { data, setSelectedPlace } = props;
   const placesSections = [];
 
-  for (const region of placesJson) {
+  const handlePlaceClick = (place) => {
+    setSelectedPlace(place);
+  };
+
+  for (const region of data) {
     placesSections.push(
     <RegionSection
       key={region.regionName}
       region={region}
+      handlePlaceClick={handlePlaceClick}
     />);
   }
 

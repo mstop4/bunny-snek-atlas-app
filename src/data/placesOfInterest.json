@@ -4,23 +4,65 @@
     "places": [
       {
         "id": 1,
-        "name": "Arch House"
+        "name": "Arch House",
+        "type": "Base",
+        "biomes": [ "Windswept Hills" ],
+        "rating": 5,
+        "location": { "x": 298, "y": 78, "z": 148 },
+        "raidCount": -1,
+        "description": [
+          "The first settlement founded in Bunny Snek. The various cave networks, connected to Arch House by several stone bridges. provided the bountiful resources for the base."
+        ]
       },
       {
         "id": 2,
-        "name": "Struggle Village"
+        "name": "Struggle Village",
+        "type": "Village",
+        "biomes": [ "Plains" ],
+        "rating": 5,
+        "location": { "x": -292, "y": 66, "z": 596 },
+        "raidCount": 1,
+        "description": [
+          "The village was once constantly besieged by monsters, until it had only two survivors left. Since then, it has fully recovered and has become the most successful settlement in Bunny Snek. It serves as a central Nether hub where many other settlements can be reached. The base is located in a mountain hideout near the village's church, in the northern part of the village.",
+          "Some notable landmarks in Struggle are the automatic sugar cane farm, the kelp farm, the Raid memorial banner, and the Memory Hole."
+        ]
       },
       {
         "id": 3,
-        "name": "Roselook Village"
+        "name": "Roselook Village",
+        "type": "Village",
+        "biomes": [ "Plains" ],
+        "rating": 4,
+        "location": { "x": -789, "y": 69, "z": 72 },
+        "raidCount": 0,
+        "description": [
+          "The first village discovered in Bunny Snek, spotted from high atop Roselook Hill.",
+          "Monster sieges once reduced the population of the village to a single villager, nearly dooming it. To save it, a long underground railway was built connecting Roselook to Struggle via Arch House. Ironically, villagers from the now booming Struggle Village were migrated to Roselook in order to repopulate it."
+        ]
       },
       {
         "id": 4,
-        "name": "Cornflower Village"
+        "name": "Cornflower Village",
+        "type": "Village",
+        "biomes": [ "Meadow", "Plains" ],
+        "rating": 1,
+        "location": { "x": -828, "y": 91, "z": 708 },
+        "raidCount": 0,
+        "description": [
+          "A small village built on the slopes of Cornflower Mountain. It was discovered during a survey to find a land route between Roselook and Soaking."
+        ]
       },
       {
         "id": 5,
-        "name": "Uneven Village"
+        "name": "Uneven Village",
+        "type": "Village",
+        "biomes": [ "Taiga Hills", "Swamp" ],
+        "rating": -1,
+        "location": { "x": -790, "y": 76, "z": -395 },
+        "raidCount": 0,
+        "description": [
+          "A village located on the northern end of Uneven Swamp. Was thought to be settled by villagers, but it is now know to be abandoned."
+        ]
       }
     ]
   },

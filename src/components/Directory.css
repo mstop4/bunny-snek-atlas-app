@@ -24,4 +24,10 @@
   font-weight: 500;
   text-decoration: none;
   color: #a0ffc0;
+  cursor: pointer;
+}
+
+.Directory-placeLink:hover {
+  font-weight: 600;
+  color: #80a0ff;
 }

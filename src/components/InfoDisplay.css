@@ -1,7 +1,41 @@
 .InfoDisplay-container {
-  background-color: rgba(0, 0, 255, 0.5);
+  padding-left: 1rem;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
+  overflow-y: scroll;
+}
+
+.InfoDisplay-container > header {
+  padding-bottom: 1em;
+}
+
+.InfoDisplay-summary {
+  padding: 0;
+}
+
+.InfoDisplay-infobox {
+  border: 1px #606080 solid;
+  border-collapse: collapse;
+}
+
+.InfoDisplay-infobox td {
+  padding: 0.5rem 1rem;
+  border: 1px #606080 solid;
+}
+
+.InfoDisplay-infobox td ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.InfoDisplay-infobox th {
+  padding: 0.25rem 0.5rem;
+  border: 1px #606080 solid;
+}
+
+.InfoDisplay-description {
+  padding: 0;
 }
