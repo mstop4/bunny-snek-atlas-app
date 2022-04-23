@@ -1,0 +1,7 @@
+.Directory-container {
+  background-color: red;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
