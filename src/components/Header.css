@@ -1,7 +1,13 @@
 .Header-container {
-  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.Header-container > h1 {
+  margin-left: 0.75rem;
 }

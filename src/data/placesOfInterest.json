@@ -1,0 +1,144 @@
+[
+  {
+    "regionName": "Arch House Area",
+    "places": [
+      {
+        "id": 1,
+        "name": "Arch House"
+      },
+      {
+        "id": 2,
+        "name": "Struggle Village"
+      },
+      {
+        "id": 3,
+        "name": "Roselook Village"
+      },
+      {
+        "id": 4,
+        "name": "Cornflower Village"
+      },
+      {
+        "id": 5,
+        "name": "Uneven Village"
+      }
+    ]
+  },
+  {
+    "regionName": "Fox Forest Area",
+    "places": [
+      {
+        "id": 6,
+        "name": "Respite House"
+      },
+      {
+        "id": 7,
+        "name": "Ender Base"
+      }
+    ]
+  },
+  {
+    "regionName": "Spawn Area",
+    "places": [
+      {
+        "id": 8,
+        "name": "Spawn Point"
+      }
+    ]
+  },
+  {
+    "regionName": "Wooded Lands",
+    "places": [
+      {
+        "id": 9,
+        "name": "Birch Base"
+      },
+      {
+        "id": 10,
+        "name": "River Maze Checkpoint"
+      },
+      {
+        "id": 11,
+        "name": "Superpoint Caverns"
+      }
+    ]
+  },
+  {
+    "regionName": "Soaking Savanna",
+    "places": [
+      {
+        "id": 12,
+        "name": "Soaking Village"
+      },
+      {
+        "id": 13,
+        "name": "Savanna Dam Village"
+      },
+      {
+        "id": 14,
+        "name": "Shattered Village"
+      }
+    ]
+  },
+  {
+    "regionName": "Beep Beep Sheep Area",
+    "places": [
+      {
+        "id": 15,
+        "name": "Bloodblast Base"
+      }
+    ]
+  },
+  {
+    "regionName": "Matchstick Forest",
+    "places": [
+      {
+        "id": 16,
+        "name": "Azurelion Village"
+      },
+      {
+        "id": 17,
+        "name": "Matchstick Village"
+      }
+    ]
+  },
+  {
+    "regionName": "Para-Arch Area",
+    "places": [
+      {
+        "id": 18,
+        "name": "Turtle Golem Village"
+      },
+      {
+        "id": 19,
+        "name": "Beaver Dam Village"
+      },
+      {
+        "id": 20,
+        "name": "Turtle-Beaver Resevoir"
+      },
+      {
+        "id": 21,
+        "name": "Otter Dam Village"
+      }
+    ]
+  },
+  {
+    "regionName": "Bastion Area",
+    "places": [
+      {
+        "id": 22,
+        "name": "Bastion Crevasse"
+      }
+    ]
+  },
+  {
+    "regionName": "Shattered Lands",
+    "places": [
+      {
+        "id": 23,
+        "name": "Shattered Lands Base"
+      }
+    ]
+  }
+]
