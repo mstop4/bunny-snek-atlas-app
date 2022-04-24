@@ -58,5 +58,77 @@
   {
     "ids": [ 4, 14 ],
     "types": [ "land" ]
+  },
+  {
+    "ids": [ 6, 7 ],
+    "types": [ "land" ]
+  },
+  {
+    "ids": [ 6, 8 ],
+    "types": [ "land" ]
+  },
+  {
+    "ids": [ 9, 8 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 9, 10 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 9, 11 ],
+    "types": [ "nether" ]
+  },
+  {
+    "ids": [ 10, 11 ],
+    "types": [ "land", "water" ]
+  },
+  {
+    "ids": [ 10, 12 ],
+    "types": [ "land", "water" ]
+  },
+  {
+    "ids": [ 11, 15 ],
+    "types": [ "water", "nether" ]
+  },
+  {
+    "ids": [ 11, 20 ],
+    "types": [ "nether" ]
+  },
+  {
+    "ids": [ 11, 12 ],
+    "types": [ "land", "water" ]
+  },
+  {
+    "ids": [ 11, 18 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 12, 13 ],
+    "types": [ "water", "nether" ]
+  },
+  {
+    "ids": [ 12, 14 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 12, 4 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 12, 16 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 12, 15 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 12, 17 ],
+    "types": [ "water" ]
+  },
+  {
+    "ids": [ 13, 14 ],
+    "types": [ "rail", "water", "nether" ]
   }
 ]

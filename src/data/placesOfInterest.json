@@ -71,11 +71,27 @@
     "places": [
       {
         "id": 6,
-        "name": "Respite House"
+        "name": "Respite House",
+        "type": "Base",
+        "biomes": [ "Plains", "Dark Forest" ],
+        "rating": 3,
+        "location": { "x": 42, "y": 69, "z": -975 },
+        "raidCount": -1,
+        "description": [
+          "A base founded after escaping the first treacherous trek through the Shores of No Respite in the Nether."
+        ]
       },
       {
         "id": 7,
-        "name": "Ender Base"
+        "name": "Ender Base",
+        "type": "Base",
+        "biomes": [ "Abandoned Mine" ],
+        "rating": 3,
+        "location": { "x": 262, "y": 38, "z": -1080 },
+        "raidCount": -1,
+        "description": [
+          "A strange cubic room found in the Groan Mineshaft that was occupied by a single Enderman. Now it is a rest stop for those exploring the mines."
+        ]
       }
     ]
   },
@@ -84,7 +100,15 @@
     "places": [
       {
         "id": 8,
-        "name": "Spawn Point"
+        "name": "Spawn Point",
+        "type": "Base",
+        "biomes": [ "Beach" ],
+        "rating": 0,
+        "location": { "x": 28, "y": 62, "z": 17 },
+        "raidCount": -1,
+        "description": [
+          "Bunny Snek's spawn area. No permanent settlement has been established here yet. There are plans to build a tower at the world's origin nearby."
+        ]
       }
     ]
   },
@@ -93,15 +117,40 @@
     "places": [
       {
         "id": 9,
-        "name": "Birch Base"
+        "name": "Birch Base",
+        "type": "Base",
+        "biomes": [ "Birch Forest" ],
+        "rating": 3,
+        "location": { "x": 257, "y": 124, "z": 458 },
+        "raidCount": -1,
+        "description": [
+          "The first settlement established after crossing the 1.18 Sea, past Arch House Area's Eastern Frontier."
+        ]
       },
       {
         "id": 10,
-        "name": "River Maze Checkpoint"
+        "name": "River Maze Checkpoint",
+        "type": "Base",
+        "biomes": [ "Old Growth Birch Forest", "River" ],
+        "rating": 3,
+        "location": { "x": 12, "y": 62, "z": 1019 },
+        "raidCount": -1,
+        "description": [
+          "This base was meant to be a temporary checkpoint for those who needed a rest after boating across the Darkwood Lagoons fromn the north or navigating the River Maze from the south. The cave systems found at the bottoms of the Lilac Ravine and Inevitable Falls Cave and their plentiful resources have made this base a necessary drop-off point.",
+          "A tower had been constructed as a viewing platform, allowing one to survey the River Maze forest."
+        ]
       },
       {
         "id": 11,
-        "name": "Superpoint Caverns"
+        "name": "Superpoint Caverns",
+        "type": "Base",
+        "biomes": [ "Dripstone Caves" ],
+        "rating": 1,
+        "location": { "x": -13, "y": -50, "z": 1306 },
+        "raidCount": -1,
+        "description": [
+          "This base was established to facilitate the exploration of Superpoint Caverns, located deep below the River Maze, without having to trek back to the River Maze Checkpoint. Exploration has been limited as the base's mob neighbours still need to be cleared out of the immediate area."
+        ]
       }
     ]
   },
@@ -110,15 +159,41 @@
     "places": [
       {
         "id": 12,
-        "name": "Soaking Village"
+        "name": "Soaking Village",
+        "type": "Village",
+        "biomes": [ "Plains" ],
+        "rating": 3,
+        "location": { "x": -950, "y": 79, "z": 1436 },
+        "raidCount": 1,
+        "description": [
+          "This village was once terrorized by the Illagers of Soaking Outpost to the south. After they were cleared out, they organized one final raid on the villager, but were ultimately defeated.",
+          "Soaking is the home of the first automated mob grinder in Bunny Snek."
+        ]
       },
       {
         "id": 13,
-        "name": "Savanna Dam Village"
+        "name": "Savanna Dam Village",
+        "type": "Village",
+        "biomes": [ "Plains", "Savanna" ],
+        "rating": 5,
+        "location": { "x": -1508, "y": 73, "z": 612 },
+        "raidCount": 0,
+        "description": [
+          "The most prosperous village in the Soaking Savanna region. It sits atop the Diamond Savanna Mine and is the home of the first automatic chicken cooker."
+        ]
       },
       {
         "id": 14,
-        "name": "Shattered Village"
+        "name": "Shattered Village",
+        "type": "Village",
+        "biomes": [ "Taiga", "Forest" ],
+        "rating": 3,
+        "location": { "x": -1155, "y": 69, "z": 502 },
+        "raidCount": 0,
+        "description": [
+          "The gateway between the Soaking Savanna and Arch House Area regions. The structure of this village had been distorted by the 1.18 update; however, the village had already been long abandoned. A repopulation project is underway, by immigrating vilagers from the Savanna Dam and Cornflower Villages.",
+          "Shattered Village is surrounded by numerous natural landmarks, such as the Triple Spire Caverns, Stalactite Thicket Caverns and Crate Lake, and the Split Feelings Forest."
+        ]
       }
     ]
   },
@@ -127,7 +202,16 @@
     "places": [
       {
         "id": 15,
-        "name": "Bloodblast Base"
+        "name": "Bloodblast Base",
+        "type": "Village",
+        "biomes": [ "Taiga", "Forest" ],
+        "rating": 3,
+        "location": { "x": -1155, "y": 69, "z": 502 },
+        "raidCount": 0,
+        "description": [
+          "The gateway between the Soaking Savanna and Arch House Area regions. The structure of this village had been distorted by the 1.18 update; however, the village had already been long abandoned. A repopulation project is underway, by immigrating vilagers from the Savanna Dam and Cornflower Villages.",
+          "Shattered Village is surrounded by numerous natural landmarks, such as the Triple Spire Caverns, Stalactite Thicket Caverns and Crate Lake, and the Split Feelings Forest."
+        ]
       }
     ]
   },
