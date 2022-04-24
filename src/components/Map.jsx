@@ -6,12 +6,12 @@ import { useRef, useState } from 'react';
 import { calculateCoords } from './Map_Utils';
 
 const MapMarker = (props) => {
-  const { mapDimensions, coords, selected } = props;
+  const { mapDimensions, coords, type } = props;
   const cssStyle = calculateCoords(mapDimensions, coords, mapDetails);
 
   return (
     <div
-      className={selected ? "Map-markerSelected" : "Map-markerHovered"}
+      className={type}
       style={cssStyle}
     >
     </div>
@@ -23,9 +23,6 @@ const Map = (props) => {
   const [mapDimensions, setMapDimensions] = useState({ x: 0, y: 0 });
   const mapElem = useRef(null);
 
-  const selectedCoords = selectedPlace ? findCoordinates(placeData, selectedPlace) : null;
-  const hoveredCoords = hoveredPlace ? findCoordinates(placeData, hoveredPlace) : null;
-
   const onMapImgLoad = () => {
     const mapElemRect = mapElem.current.getBoundingClientRect();
     setMapDimensions({
@@ -33,6 +30,28 @@ const Map = (props) => {
       y: mapElemRect.height
     });
   };
+
+  const createMapMarkers = () => {
+    const markers = []
+    for (const place of placeData) {
+      const coords = findCoordinates(placeData, place.name);
+      let type = 'Map-markerUnselected';
+
+      if (place.name === selectedPlace) type = 'Map-markerSelected';
+      else if (place.name === hoveredPlace) type = 'Map-markerHovered';
+
+      markers.push(<MapMarker
+        key={place.name}
+        mapDimensions={mapDimensions}
+        coords={coords}
+        type={type}
+      />);
+    }
+
+    return markers;
+  }
+
+  const mapMarkers = createMapMarkers();
 
   return (
     <div className="Map-container">
@@ -42,18 +61,7 @@ const Map = (props) => {
         ref={mapElem}
         onLoad={onMapImgLoad}
       />
-      <MapMarker
-        mapDimensions={mapDimensions}
-        coords={selectedCoords}
-        selected={true}
-      />
-      {selectedCoords !== hoveredCoords
-      ? <MapMarker
-        mapDimensions={mapDimensions}
-        coords={hoveredCoords}
-        selected={false}
-      />
-      : null}
+      {mapMarkers}
     </div>
   )
 }

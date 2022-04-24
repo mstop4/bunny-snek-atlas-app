@@ -30,7 +30,7 @@ const RegionSection = (props) => {
 }
 
 const Directory = (props) => {
-  const { data, setSelectedPlace, setHoveredPlace } = props;
+  const { placesData, setSelectedPlace, setHoveredPlace } = props;
   const placesSections = [];
 
   const handlePlaceClick = (place) => {
@@ -41,7 +41,7 @@ const Directory = (props) => {
     setHoveredPlace(place);
   }
 
-  for (const region of data) {
+  for (const region of placesData) {
     placesSections.push(
     <RegionSection
       key={region.regionName}

@@ -16,12 +16,22 @@
   border: 1px black solid;
 }
 
+.Map-markerUnselected {
+  position: absolute;
+  display: inline;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #808080c0;
+  border: 1px #000000c0 solid;
+}
+
 .Map-markerHovered {
   position: absolute;
   display: inline;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #40a0ff;
+  background-color: #40c0ff;
   border: 1px black solid;
 }

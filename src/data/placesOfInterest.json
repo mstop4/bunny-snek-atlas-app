@@ -203,14 +203,13 @@
       {
         "id": 15,
         "name": "Bloodblast Base",
-        "type": "Village",
-        "biomes": [ "Taiga", "Forest" ],
-        "rating": 3,
-        "location": { "x": -1155, "y": 69, "z": 502 },
-        "raidCount": 0,
+        "type": "Base",
+        "biomes": [ "Beach", "Plains" ],
+        "rating": 2,
+        "location": { "x": -6, "y": 64, "z": 2363 },
+        "raidCount": -1,
         "description": [
-          "The gateway between the Soaking Savanna and Arch House Area regions. The structure of this village had been distorted by the 1.18 update; however, the village had already been long abandoned. A repopulation project is underway, by immigrating vilagers from the Savanna Dam and Cornflower Villages.",
-          "Shattered Village is surrounded by numerous natural landmarks, such as the Triple Spire Caverns, Stalactite Thicket Caverns and Crate Lake, and the Split Feelings Forest."
+          "This base mainly serves as a connection between Beep Beep Sheep Mountain in the Overworld with Bloodblast Forest in the nether."
         ]
       }
     ]
@@ -220,11 +219,28 @@
     "places": [
       {
         "id": 16,
-        "name": "Azurelion Village"
+        "name": "Azurelion Village",
+        "type": "Village",
+        "biomes": [ "Meadow" ],
+        "rating": 3,
+        "location": { "x": -1419, "y": 118, "z": 2795 },
+        "raidCount": 1,
+        "description": [
+          "A mountainside village covered in a meadow of its two namesake flowers: the azure bluet and dandelion.",
+          "The steep terrain makes travelling around the village a bit challenging, and this same steep terrain helped the village survive its first raid. Many Illagers fell and were trapped by the nearby crevasses and steep river valley."
+        ]
       },
       {
         "id": 17,
-        "name": "Matchstick Village"
+        "name": "Matchstick Village",
+        "type": "Village",
+        "biomes": [ "Taiga" ],
+        "rating": 0,
+        "location": { "x": -834, "y": 116, "z": 3002 },
+        "raidCount": 0,
+        "description": [
+          "The small, seculded neighbours of Azurelion Village. Despite its small size, it has a boom population."
+        ]
       }
     ]
   },
@@ -233,19 +249,51 @@
     "places": [
       {
         "id": 18,
-        "name": "Turtle Golem Village"
+        "name": "Turtle Golem Village",
+        "type": "Village",
+        "biomes": [ "Plains", "River" ],
+        "rating": 0,
+        "location": { "x": 1253, "y": 63, "z": 1691 },
+        "raidCount": 0,
+        "description": [
+          "The marine gateway to the Para-Arch Area, one of the three villages that make the region up."
+        ]
       },
       {
         "id": 19,
-        "name": "Beaver Dam Village"
+        "name": "Beaver Dam Village",
+        "type": "Village",
+        "biomes": [ "Plains", "River" ],
+        "rating": 0,
+        "location": { "x": 1348, "y": 70, "z": 1428 },
+        "raidCount": 0,
+        "description": [
+          "One of the three villages that make up the Para-Arch Area."
+        ]
       },
       {
         "id": 20,
-        "name": "Turtle-Beaver Resevoir"
+        "name": "Turtle-Beaver Resevoir",
+        "type": "Base",
+        "biomes": [ "Moutains", "Plains" ],
+        "rating": 2,
+        "location": { "x": 1376, "y": 62, "z": 1714 },
+        "raidCount": -1,
+        "description": [
+          "The Nether gateway to the Para-Arch area. Originally planned to be built in between Turtle Golem Village and Beaver Dam Village, the sheltered resevoir of the current location was a more attractive choice."
+        ]
       },
       {
         "id": 21,
-        "name": "Otter Dam Village"
+        "name": "Otter Dam Village",
+        "type": "Village",
+        "biomes": [ "Plains", "River" ],
+        "rating": 0,
+        "location": { "x": 1756, "y": 63, "z": 1348 },
+        "raidCount": 0,
+        "description": [
+          "One of the three villages that make up the Para-Arch Area."
+        ]
       }
     ]
   },
@@ -254,7 +302,15 @@
     "places": [
       {
         "id": 22,
-        "name": "Bastion Crevasse"
+        "name": "Bastion Crevasse",
+        "type": "Base",
+        "biomes": [ "Plains" ],
+        "rating": 2,
+        "location": { "x": 732, "y": 63, "z": 2657 },
+        "raidCount": -1,
+        "description": [
+          "This base mainly serves as a connection between the Overworld and Angry Boar bastion in the Nether."
+        ]
       }
     ]
   },
@@ -263,7 +319,15 @@
     "places": [
       {
         "id": 23,
-        "name": "Shattered Lands Base"
+        "name": "Shattered Lands Base",
+        "type": "Base",
+        "biomes": [ "Forest", "Old Growth Birch Forest", "Windswept Savanna", "Beach" ],
+        "rating": 0,
+        "location": { "x": 1603, "y": 89, "z": 2172 },
+        "raidCount": 0,
+        "description": [
+          "This base was established to study the strange, clashing biomes in the Shattered Lands."
+        ]
       }
     ]
   }

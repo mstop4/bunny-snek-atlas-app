@@ -1,11 +1,10 @@
 import './InfoDisplay.css';
 import Map from './Map';
-import connections from '../data/connections.json';
 import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating } from './InfoDisplay_Utils';
 
 const InfoDisplay = (props) => {
-  const { data: placeData, selectedPlace, hoveredPlace } = props;
-  const currentPlace = placeData.find(place => place.name === selectedPlace);
+  const { placesData, connectionsData, selectedPlace, hoveredPlace } = props;
+  const currentPlace = placesData.find(place => place.name === selectedPlace);
 
   if (!currentPlace) {
     return (
@@ -29,7 +28,7 @@ const InfoDisplay = (props) => {
   const descriptionList = parseDescription(description);
   const locationString = parseLocation(location);
   const ratingStars = parseRating(rating);
-  const connectionList = findConnections(connections, placeData, selectedPlace);
+  const connectionList = findConnections(connectionsData, placesData, selectedPlace);
 
   return (
     <div className="InfoDisplay-container">
@@ -77,7 +76,7 @@ const InfoDisplay = (props) => {
           <Map
             selectedPlace={selectedPlace}
             hoveredPlace={hoveredPlace}
-            placeData={placeData}
+            placeData={placesData}
           />
         </section>
         <section className="InfoDisplay-description">

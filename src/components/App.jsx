@@ -3,10 +3,12 @@ import Directory from './Directory';
 import Header from './Header';
 import InfoDisplay from './InfoDisplay';
 import placesJson from '../data/placesOfInterest.json';
-import { flattenPlaceData } from '../data/dataUtils';
+import connections from '../data/connections.json';
+import { calculateConnectionDistances, flattenPlaceData } from '../data/dataUtils';
 import { useState } from 'react';
 
 const flattenedPlacesData = flattenPlaceData(placesJson);
+const processedConnections = calculateConnectionDistances(connections, flattenedPlacesData);
 
 const App = () => {
   const [selectedPlace, setSelectedPlace] = useState(null);
@@ -16,12 +18,13 @@ const App = () => {
     <section className="App">
       <Header/>
       <Directory
-        data={placesJson}
+        placesData={placesJson}
         setSelectedPlace={setSelectedPlace}
         setHoveredPlace={setHoveredPlace}
       />
       <InfoDisplay
-        data={flattenedPlacesData}
+        placesData={flattenedPlacesData}
+        connectionsData={processedConnections}
         selectedPlace={selectedPlace}
         hoveredPlace={hoveredPlace}
       />

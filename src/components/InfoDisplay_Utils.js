@@ -8,17 +8,22 @@ const CONNECTION_SYMBOLS = {
 
 // TODO: refactor this to use only placeIds
 export const findConnections = (connectionsData, placeData, placeName) => {
-  const placeId = placeData.find(place => place.name === placeName).id;
-  const myConnections = connectionsData.filter((connection) => connection.ids.includes(placeId));
+  const currentPlace = placeData.find(place => place.name === placeName);
+  const { id: currentPlaceId } = currentPlace;
+
+  const myConnections = connectionsData
+    .filter((connection) => connection.ids.includes(currentPlaceId))
+    .sort((a, b) => a.distance - b.distance);
+
   const connectionList = [];
 
   if (myConnections.length) {
     for (const connection of myConnections) {
-      const otherPlaceId = connection.ids[0] === placeId ? connection.ids[1] : connection.ids[0];
+      const otherPlaceId = connection.ids[0] === currentPlaceId ? connection.ids[1] : connection.ids[0];
       const { types: connectionTypes } = connection;
       const otherPlaceName = placeData.find((place) => place.id === otherPlaceId).name;
 
-      let connectionString = `${otherPlaceName} `;
+      let connectionString = `${otherPlaceName} (${connection.distance.toFixed(0)} m) `;
       for (const connectionType of connectionTypes) {
         if (Object.keys(CONNECTION_SYMBOLS).includes(connectionType)) {
           connectionString += CONNECTION_SYMBOLS[connectionType];
@@ -49,7 +54,7 @@ export const parseBiomes = (biomes) => {
 
 export const parseRating = (rating) => {
   const ratingStars = [];
-  if (rating) {
+  if (rating || rating === 0) {
     if (rating === -1) ratingStars.push(<span>Abandoned</span>);
     else if (rating === 0) ratingStars.push(<span>Unsettled</span>);
     else {
