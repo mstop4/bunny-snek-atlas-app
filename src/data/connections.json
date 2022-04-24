@@ -1,0 +1,62 @@
+[
+  {
+    "ids": [ 1, 2 ],
+    "types": [ "land", "rail", "water", "nether" ]
+  },
+  {
+    "ids": [ 1, 3 ],
+    "types": [ "land", "rail", "nether" ]
+  },
+  {
+    "ids": [ 1, 8 ],
+    "types": [ "land", "water" ]
+  },
+  {
+    "ids": [ 1, 9 ],
+    "types": [ "water", "nether" ]
+  },
+  {
+    "ids": [ 2, 6 ],
+    "types": [ "nether" ]
+  },
+  {
+    "ids": [ 2, 4 ],
+    "types": [ "land" ]
+  },
+  {
+    "ids": [ 2, 9 ],
+    "types": [ "water", "nether" ]
+  },
+  {
+    "ids": [ 2, 14 ],
+    "types": [ "nether" ]
+  },
+  {
+    "ids": [ 2, 13 ],
+    "types": [ "nether" ]
+  },
+  {
+    "ids": [ 2, 12 ],
+    "types": [ "nether" ]
+  },
+  {
+    "ids": [ 2, 15 ],
+    "types": [ "nether" ]
+  },
+  {
+    "ids": [ 3, 14 ],
+    "types": [ "land", "nether" ]
+  },
+  {
+    "ids": [ 3, 5 ],
+    "types": [ "land" ]
+  },
+  {
+    "ids": [ 3, 4 ],
+    "types": [ "land" ]
+  },
+  {
+    "ids": [ 4, 14 ],
+    "types": [ "land" ]
+  }
+]

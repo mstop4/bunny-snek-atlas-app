@@ -1,8 +1,10 @@
 import './InfoDisplay.css';
+import connections from '../data/connections.json';
+import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating } from './InoFidplay_Utils';
 
 const InfoDisplay = (props) => {
-  const { data, selectedPlace } = props;
-  const currentPlace = data.find(place => place.name === selectedPlace);
+  const { data: placeData, selectedPlace } = props;
+  const currentPlace = placeData.find(place => place.name === selectedPlace);
 
   if (!currentPlace) {
     return (
@@ -22,40 +24,11 @@ const InfoDisplay = (props) => {
     type
   } = currentPlace;
 
-  // Biomes
-  const biomeList = [];
-  if (biomes) {
-    for (const biome of biomes) {
-      biomeList.push(
-        <li key={biome}>{biome}</li>
-      );
-    }
-  }
-
-  // Rating
-  const ratingStars = [];
-  if (rating) {
-    if (rating === -1) ratingStars.push(<span>Abandoned</span>);
-    else if (rating === 0) ratingStars.push(<span>Unsettled</span>);
-    else {
-      for (let i = 0; i < rating; i++) {
-        ratingStars.push(<span key={i}>★</span>);
-      }
-    }
-  }
-
-  // Description
-  const descriptionList = [];
-  if (description) {
-    for (const line of description) {
-      descriptionList.push(
-        <p key={line}>{line}</p>
-      );
-    }
-  }
-
-  // Location
-  const locationString = location ? `${location.x}, ${location.y}, ${location.z}` : "";
+  const biomeList = parseBiomes(biomes);
+  const descriptionList = parseDescription(description);
+  const locationString = parseLocation(location);
+  const ratingStars = parseRating(rating);
+  const connectionList = findConnections(connections, placeData, selectedPlace);
 
   return (
     <div className="InfoDisplay-container">
@@ -94,10 +67,7 @@ const InfoDisplay = (props) => {
                 <th>Connections</th>
                 <td>
                   <ul>
-                    <li>Foo 🥾</li>
-                    <li>Bar 🚊</li>
-                    <li>Baz ⛵</li>
-                    <li>Qux 🔥</li>
+                    {connectionList}
                   </ul>
                 </td>
               </tr>
