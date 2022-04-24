@@ -322,9 +322,9 @@
         "name": "Shattered Lands Base",
         "type": "Base",
         "biomes": [ "Forest", "Old Growth Birch Forest", "Windswept Savanna", "Beach" ],
-        "rating": 0,
+        "rating": 2,
         "location": { "x": 1603, "y": 89, "z": 2172 },
-        "raidCount": 0,
+        "raidCount": -1,
         "description": [
           "This base was established to study the strange, clashing biomes in the Shattered Lands."
         ]

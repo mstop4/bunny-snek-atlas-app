@@ -42,3 +42,14 @@
 .InfoDisplay-description {
   padding: 0;
 }
+
+.InfoDisplay-connectionListItem {
+  cursor: pointer;
+  color: #a0ffc0;
+  font-weight: 500;
+}
+
+.InfoDisplay-connectionListItem:hover {
+  font-weight: 600;
+  color: #80a0ff;
+}

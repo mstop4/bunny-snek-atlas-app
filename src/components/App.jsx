@@ -27,6 +27,8 @@ const App = () => {
         connectionsData={processedConnections}
         selectedPlace={selectedPlace}
         hoveredPlace={hoveredPlace}
+        setSelectedPlace={setSelectedPlace}
+        setHoveredPlace={setHoveredPlace}
       />
     </section>
   );

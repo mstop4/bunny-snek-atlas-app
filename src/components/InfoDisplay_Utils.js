@@ -7,7 +7,7 @@ const CONNECTION_SYMBOLS = {
 };
 
 // TODO: refactor this to use only placeIds
-export const findConnections = (connectionsData, placeData, placeName) => {
+export const findConnections = (connectionsData, placeData, placeName, onPlaceSelected, onPlaceHovered) => {
   const currentPlace = placeData.find(place => place.name === placeName);
   const { id: currentPlaceId } = currentPlace;
 
@@ -23,16 +23,29 @@ export const findConnections = (connectionsData, placeData, placeName) => {
       const { types: connectionTypes } = connection;
       const otherPlaceName = placeData.find((place) => place.id === otherPlaceId).name;
 
-      let connectionString = `${otherPlaceName} (${connection.distance.toFixed(0)} m) `;
+      const connectionLink = `${otherPlaceName}`;
+      let connectionDetails = ` (${connection.distance.toFixed(0)} m)`
       for (const connectionType of connectionTypes) {
         if (Object.keys(CONNECTION_SYMBOLS).includes(connectionType)) {
-          connectionString += CONNECTION_SYMBOLS[connectionType];
+          connectionDetails += CONNECTION_SYMBOLS[connectionType];
         } else {
-          connectionString += CONNECTION_SYMBOLS.unknown;
+          connectionDetails += CONNECTION_SYMBOLS.unknown;
         }
       }
 
-      connectionList.push(<li key={otherPlaceId}>{connectionString}</li>);
+      connectionList.push(
+        <li key={otherPlaceId}>
+          <span
+            className="InfoDisplay-connectionListItem"
+            onClick={() => onPlaceSelected(otherPlaceName)}
+            onMouseEnter={() => onPlaceHovered(otherPlaceName)}
+            onMouseLeave={() => onPlaceHovered(null)}
+          >
+            {connectionLink}
+          </span>
+          {connectionDetails}
+        </li>
+      );
     }
   }
 

@@ -3,7 +3,23 @@ import Map from './Map';
 import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating } from './InfoDisplay_Utils';
 
 const InfoDisplay = (props) => {
-  const { placesData, connectionsData, selectedPlace, hoveredPlace } = props;
+  const {
+    placesData,
+    connectionsData,
+    selectedPlace,
+    hoveredPlace,
+    setSelectedPlace,
+    setHoveredPlace,
+  } = props;
+
+  const onPlaceSelected = (place) => {
+    setSelectedPlace(place);
+  }
+
+  const onPlacehovered = (place) => {
+    setHoveredPlace(place);
+  }
+
   const currentPlace = placesData.find(place => place.name === selectedPlace);
 
   if (!currentPlace) {
@@ -28,7 +44,7 @@ const InfoDisplay = (props) => {
   const descriptionList = parseDescription(description);
   const locationString = parseLocation(location);
   const ratingStars = parseRating(rating);
-  const connectionList = findConnections(connectionsData, placesData, selectedPlace);
+  const connectionList = findConnections(connectionsData, placesData, selectedPlace, onPlaceSelected, onPlacehovered);
 
   return (
     <div className="InfoDisplay-container">
