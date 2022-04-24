@@ -1,7 +1,27 @@
 .Map-container {
-  background-color: rgba(0, 128, 0, 0.5);
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  position: relative;
+}
+
+.Map-container > img {
+  height: 50vh;
+}
+
+.Map-markerSelected {
+  position: absolute;
+  display: inline;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  border: 1px black solid;
+}
+
+.Map-markerHovered {
+  position: absolute;
+  display: inline;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #40a0ff;
+  border: 1px black solid;
 }

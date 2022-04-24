@@ -1,13 +1,18 @@
 import './Directory.css';
 
 const RegionSection = (props) => {
-  const { region, handlePlaceClick } = props;
+  const { region, handlePlaceClick, handlePlaceHover } = props;
   const placesList = [];
 
   for (const place of region.places) {
     placesList.push(
       <li key={place.name}>
-        <span className="Directory-placeLink" onClick={() => handlePlaceClick(place.name)}>
+        <span 
+          className="Directory-placeLink"
+          onClick={() => handlePlaceClick(place.name)}
+          onMouseEnter={() => handlePlaceHover(place.name)}
+          onMouseLeave={() => handlePlaceHover(null)}
+        >
           {place.name}
         </span>
       </li>
@@ -25,12 +30,16 @@ const RegionSection = (props) => {
 }
 
 const Directory = (props) => {
-  const { data, setSelectedPlace } = props;
+  const { data, setSelectedPlace, setHoveredPlace } = props;
   const placesSections = [];
 
   const handlePlaceClick = (place) => {
     setSelectedPlace(place);
   };
+
+  const handlePlaceHover = (place) => {
+    setHoveredPlace(place);
+  }
 
   for (const region of data) {
     placesSections.push(
@@ -38,6 +47,7 @@ const Directory = (props) => {
       key={region.regionName}
       region={region}
       handlePlaceClick={handlePlaceClick}
+      handlePlaceHover={handlePlaceHover}
     />);
   }
 

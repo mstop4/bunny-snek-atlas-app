@@ -12,3 +12,8 @@ export const flattenPlaceData = (placeData) => {
 
   return flattenedPlaceData;
 }
+
+export const findCoordinates = (placeData, placeName) => {
+  const currentPlace = placeData.find(place => place.name === placeName);
+  return currentPlace.location;
+};

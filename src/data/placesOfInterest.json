@@ -8,7 +8,7 @@
         "type": "Base",
         "biomes": [ "Windswept Hills" ],
         "rating": 5,
-        "location": { "x": 298, "y": 78, "z": 148 },
+        "location": { "x": -298, "y": 78, "z": 148 },
         "raidCount": -1,
         "description": [
           "The first settlement founded in Bunny Snek. The various cave networks, connected to Arch House by several stone bridges. provided the bountiful resources for the base."

@@ -1,9 +1,10 @@
 import './InfoDisplay.css';
+import Map from './Map';
 import connections from '../data/connections.json';
-import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating } from './InoFidplay_Utils';
+import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating } from './InfoDisplay_Utils';
 
 const InfoDisplay = (props) => {
-  const { data: placeData, selectedPlace } = props;
+  const { data: placeData, selectedPlace, hoveredPlace } = props;
   const currentPlace = placeData.find(place => place.name === selectedPlace);
 
   if (!currentPlace) {
@@ -73,6 +74,11 @@ const InfoDisplay = (props) => {
               </tr>
             </tbody>
           </table>
+          <Map
+            selectedPlace={selectedPlace}
+            hoveredPlace={hoveredPlace}
+            placeData={placeData}
+          />
         </section>
         <section className="InfoDisplay-description">
           {descriptionList}
