@@ -49,7 +49,7 @@ const InfoDisplay = (props) => {
   return (
     <div className="InfoDisplay-container">
       <header>
-        <h1>{name}</h1>
+        <h1 className="InfoDisplay-title">{name}</h1>
       </header>
       <main>
         <section className="InfoDisplay-summary">

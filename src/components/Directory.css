@@ -6,6 +6,17 @@
   grid-column-end: 2;
   overflow-x: hidden;
   overflow-y: scroll;
+  scrollbar-color: #505050 #303030;
+}
+
+.Directory-container::-webkit-scrollbar {
+  background-color: #303030;
+  border-radius: 10px;
+}
+
+.Directory-container::-webkit-scrollbar-thumb {
+  background: #505050;
+  border-radius: 10px;
 }
 
 .Directory-regionSection > ul {

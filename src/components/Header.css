@@ -10,4 +10,6 @@
 
 .Header-container > h1 {
   margin-left: 0.75rem;
+  font-size: 1.75rem;
+  font-style: italic;
 }
