@@ -1,6 +1,6 @@
 import './InfoDisplay.css';
 import Map from './Map';
-import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating } from './InfoDisplay_Utils';
+import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating, parseType } from './InfoDisplay_Utils';
 
 const InfoDisplay = (props) => {
   const {
@@ -37,9 +37,10 @@ const InfoDisplay = (props) => {
     name,
     raidCount,
     rating,
-    type
+    type,
   } = currentPlace;
 
+  const typeIcon = parseType(type, rating);
   const biomeList = parseBiomes(biomes);
   const descriptionList = parseDescription(description);
   const locationString = parseLocation(location);
@@ -57,7 +58,7 @@ const InfoDisplay = (props) => {
             <tbody>
               <tr>
                 <th>Type</th>
-                <td>{type}</td>
+                <td>{typeIcon}</td>
               </tr>
               <tr>
                 <th>Biome</th>

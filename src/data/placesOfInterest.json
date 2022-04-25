@@ -191,7 +191,7 @@
         "location": { "x": -1155, "y": 69, "z": 502 },
         "raidCount": 0,
         "description": [
-          "The gateway between the Soaking Savanna and Arch House Area regions. The structure of this village had been distorted by the 1.18 update; however, the village had already been long abandoned. A repopulation project is underway, by immigrating vilagers from the Savanna Dam and Cornflower Villages.",
+          "The gateway between the Soaking Savanna and Arch House Area regions. The structure of this village had been distorted by the 1.18 update; however, the village had already been long abandoned. A repopulation project is underway, by immigrating villagers from the Savanna Dam and Cornflower Villages.",
           "Shattered Village is surrounded by numerous natural landmarks, such as the Triple Spire Caverns, Stalactite Thicket Caverns and Crate Lake, and the Split Feelings Forest."
         ]
       }
@@ -256,7 +256,7 @@
         "location": { "x": 1253, "y": 63, "z": 1691 },
         "raidCount": 0,
         "description": [
-          "The marine gateway to the Para-Arch Area, one of the three villages that make the region up."
+          "The western marine gateway to the Para-Arch Area, one of the three villages that make up the region."
         ]
       },
       {
@@ -309,7 +309,7 @@
         "location": { "x": 732, "y": 63, "z": 2657 },
         "raidCount": -1,
         "description": [
-          "This base mainly serves as a connection between the Overworld and Angry Boar bastion in the Nether."
+          "This base mainly serves as a connection between the Overworld and Angry Boar Bastion in the Nether."
         ]
       }
     ]

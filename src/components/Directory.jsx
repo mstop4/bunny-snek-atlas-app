@@ -1,3 +1,5 @@
+import { faBuilding, faBuildingCircleExclamation, faBuildingCircleXmark, faHouse, faHouseCircleExclamation, faHouseCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Directory.css';
 
 const RegionSection = (props) => {
@@ -5,6 +7,23 @@ const RegionSection = (props) => {
   const placesList = [];
 
   for (const place of region.places) {
+    const { rating, type } = place;
+    let icon;
+
+    if (rating === -1) {
+      icon = type === 'Village'
+        ? <FontAwesomeIcon icon={faBuildingCircleXmark} className="Directory-typeIcon" title="Abandoned Village"/>
+        : <FontAwesomeIcon icon={faHouseCircleXmark} className="Directory-typeIcon" title="Abandoned Base"/>
+    } else if (rating === 0) {
+      icon = type === 'Village'
+        ? <FontAwesomeIcon icon={faBuildingCircleExclamation} className="Directory-typeIcon" title="Unsettled Village"/>
+        : <FontAwesomeIcon icon={faHouseCircleExclamation} className="Directory-typeIcon" title="Unsettled Base"/>
+    } else {
+      icon = type === 'Village'
+        ? <FontAwesomeIcon icon={faBuilding} className="Directory-typeIcon" title="Settled Village"/>
+        : <FontAwesomeIcon icon={faHouse} className="Directory-typeIcon" title="Settled Base"/>
+    }
+
     placesList.push(
       <li key={place.name}>
         <span 
@@ -15,6 +34,7 @@ const RegionSection = (props) => {
         >
           {place.name}
         </span>
+        {icon}
       </li>
     );
   }

@@ -60,6 +60,14 @@
   padding: 0;
 }
 
+.InfoDisplay-connectionIcon {
+  margin: 0 0.25rem;
+}
+
+.InfoDisplay-typeIcon {
+  margin-right: 0.5rem;
+}
+
 .InfoDisplay-connectionListItem {
   cursor: pointer;
   color: #a0ffc0;
