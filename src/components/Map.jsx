@@ -1,13 +1,14 @@
 import './Map.css';
 import mapImage from '../img/map.png';
-import mapDetails from '../data/mapDetails.json';
+import settings from '../data/settings.json';
 import { findCoordinates } from '../data/dataUtils';
 import { useRef, useState } from 'react';
 import { calculateCoords } from './Map_Utils';
 
 const MapMarker = (props) => {
   const { mapDimensions, coords, type } = props;
-  const cssStyle = calculateCoords(mapDimensions, coords, mapDetails);
+  const { map: mapSettings} = settings;
+  const cssStyle = calculateCoords(mapDimensions, coords, mapSettings);
 
   return (
     <div

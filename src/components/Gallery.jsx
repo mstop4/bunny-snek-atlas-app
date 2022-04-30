@@ -1,7 +1,9 @@
 import './Gallery.css';
+import settings from '../data/settings.json';
 
 export const Gallery = (props) => {
   const { photos } = props;
+  const { photosBaseUrl } = settings;
 
   const photoElems = [];
   console.log(photos);
@@ -9,7 +11,7 @@ export const Gallery = (props) => {
     photoElems.push(
       <img
         className="Gallery-photo"
-        src={require(`../img/photos/${photo}`)}
+        src={`${photosBaseUrl}${photo}`}
         alt={photo}
         key={photo}
       />
