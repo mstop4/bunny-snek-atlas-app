@@ -67,7 +67,7 @@
         "description": [
           "A village located on the northern end of Uneven Swamp. Was thought to be settled by villagers, but it is now know to be abandoned."
         ],
-        "photos": []
+        "photos": ["uneven_village.png"]
       }
     ]
   },
@@ -85,7 +85,7 @@
         "description": [
           "A base founded after escaping the first treacherous trek through the Shores of No Respite in the Nether."
         ],
-        "photos": []
+        "photos": ["respite_house.png"]
       },
       {
         "id": 7,
@@ -98,7 +98,7 @@
         "description": [
           "A strange cubic room found in the Groan Mineshaft that was occupied by a single Enderman. Now it is a rest stop for those exploring the mines."
         ],
-        "photos": []
+        "photos": ["ender_base.png"]
       }
     ]
   },
@@ -116,7 +116,7 @@
         "description": [
           "Bunny Snek's spawn area. No permanent settlement has been established here yet. There are plans to build a tower at the world's origin nearby."
         ],
-        "photos": []
+        "photos": ["spawn_point.png"]
       }
     ]
   },
@@ -134,7 +134,7 @@
         "description": [
           "The first settlement established after crossing the 1.18 Sea, past Arch House Area's Eastern Frontier."
         ],
-        "photos": []
+        "photos": ["birch_base.png"]
       },
       {
         "id": 10,
@@ -148,7 +148,7 @@
           "This base was meant to be a temporary checkpoint for those who needed a rest after boating across the Darkwood Lagoons fromn the north or navigating the River Maze from the south. The cave systems found at the bottoms of the Lilac Ravine and Inevitable Falls Cave and their plentiful resources have made this base a necessary drop-off point.",
           "A tower had been constructed as a viewing platform, allowing one to survey the River Maze forest."
         ],
-        "photos": []
+        "photos": ["river_maze_checkpoint.png"]
       },
       {
         "id": 11,
@@ -161,7 +161,7 @@
         "description": [
           "This base was established to facilitate the exploration of Superpoint Caverns, located deep below the River Maze, without having to trek back to the River Maze Checkpoint. Exploration has been limited as the base's mob neighbours still need to be cleared out of the immediate area."
         ],
-        "photos": []
+        "photos": ["superpoint_caverns.png"]
       }
     ]
   },
@@ -225,7 +225,7 @@
         "description": [
           "This base mainly serves as a connection between Beep Beep Sheep Mountain in the Overworld with Bloodblast Forest in the nether."
         ],
-        "photos": []
+        "photos": ["bloodblast_base.png"]
       }
     ]
   },
@@ -244,7 +244,7 @@
           "A mountainside village covered in a meadow of its two namesake flowers: the azure bluet and dandelion.",
           "The steep terrain makes travelling around the village a bit challenging, and this same steep terrain helped the village survive its first raid. Many Illagers fell and were trapped by the nearby crevasses and steep river valley."
         ],
-        "photos": []
+        "photos": ["azurelion_village.png"]
       },
       {
         "id": 17,
@@ -257,7 +257,7 @@
         "description": [
           "The small, seculded neighbours of Azurelion Village. Despite its small size, it has a boom population."
         ],
-        "photos": []
+        "photos": ["matchstick_village.png"]
       }
     ]
   },
@@ -275,7 +275,7 @@
         "description": [
           "The western marine gateway to the Para-Arch Area, one of the three villages that make up the region."
         ],
-        "photos": []
+        "photos": ["turtle_golem_village.png"]
       },
       {
         "id": 19,
@@ -288,7 +288,7 @@
         "description": [
           "One of the three villages that make up the Para-Arch Area."
         ],
-        "photos": []
+        "photos": ["beaver_dam_village.png"]
       },
       {
         "id": 20,
@@ -301,7 +301,7 @@
         "description": [
           "The Nether gateway to the Para-Arch area. Originally planned to be built in between Turtle Golem Village and Beaver Dam Village, the sheltered resevoir of the current location was a more attractive choice."
         ],
-        "photos": []
+        "photos": ["turtle_beaver_resevoir.png"]
       },
       {
         "id": 21,
@@ -314,7 +314,7 @@
         "description": [
           "One of the three villages that make up the Para-Arch Area."
         ],
-        "photos": []
+        "photos": ["otter_dam_village.png"]
       }
     ]
   },
@@ -332,7 +332,7 @@
         "description": [
           "This base mainly serves as a connection between the Overworld and Angry Boar Bastion in the Nether."
         ],
-        "photos": []
+        "photos": ["bastion_crevasse.png"]
       }
     ]
   },
@@ -350,7 +350,7 @@
         "description": [
           "This base was established to study the strange, clashing biomes in the Shattered Lands."
         ],
-        "photos": []
+        "photos": ["shattered_lands_base.png"]
       }
     ]
   }
