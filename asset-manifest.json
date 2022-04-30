@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bunny-snek-atlas-app/static/css/main.82d33530.css",
-    "main.js": "/bunny-snek-atlas-app/static/js/main.ba1c1598.js",
+    "main.css": "/bunny-snek-atlas-app/static/css/main.d1830ffb.css",
+    "main.js": "/bunny-snek-atlas-app/static/js/main.ded6ac10.js",
     "static/js/787.7dcce817.chunk.js": "/bunny-snek-atlas-app/static/js/787.7dcce817.chunk.js",
-    "static/media/test.png": "/bunny-snek-atlas-app/static/media/test.616227a651dfcf1daa71.png",
+    "static/media/map.png": "/bunny-snek-atlas-app/static/media/map.046e94ef89c8b9374b65.png",
     "index.html": "/bunny-snek-atlas-app/index.html",
-    "main.82d33530.css.map": "/bunny-snek-atlas-app/static/css/main.82d33530.css.map",
-    "main.ba1c1598.js.map": "/bunny-snek-atlas-app/static/js/main.ba1c1598.js.map",
+    "main.d1830ffb.css.map": "/bunny-snek-atlas-app/static/css/main.d1830ffb.css.map",
+    "main.ded6ac10.js.map": "/bunny-snek-atlas-app/static/js/main.ded6ac10.js.map",
     "787.7dcce817.chunk.js.map": "/bunny-snek-atlas-app/static/js/787.7dcce817.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82d33530.css",
-    "static/js/main.ba1c1598.js"
+    "static/css/main.d1830ffb.css",
+    "static/js/main.ded6ac10.js"
   ]
 }
