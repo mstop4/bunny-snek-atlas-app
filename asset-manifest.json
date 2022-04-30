@@ -1,23 +1,16 @@
 {
   "files": {
     "main.css": "/bunny-snek-atlas-app/static/css/main.09b66165.css",
-    "main.js": "/bunny-snek-atlas-app/static/js/main.62741b7e.js",
+    "main.js": "/bunny-snek-atlas-app/static/js/main.c59fc6f7.js",
     "static/js/787.7dcce817.chunk.js": "/bunny-snek-atlas-app/static/js/787.7dcce817.chunk.js",
-    "static/media/shattered_village.png": "/bunny-snek-atlas-app/static/media/shattered_village.d4cdaf64d8b8616c9ac6.png",
-    "static/media/cornflower_village.png": "/bunny-snek-atlas-app/static/media/cornflower_village.93648e82af65514ec0ae.png",
-    "static/media/savanna_dam_village.png": "/bunny-snek-atlas-app/static/media/savanna_dam_village.30937ebcd29de41366e8.png",
-    "static/media/struggle_village.png": "/bunny-snek-atlas-app/static/media/struggle_village.c50ebebbe4e463e4d283.png",
-    "static/media/roselook_village.png": "/bunny-snek-atlas-app/static/media/roselook_village.f2940a64bf2a7add48dd.png",
-    "static/media/arch_house.png": "/bunny-snek-atlas-app/static/media/arch_house.7e0c6fe98f662e10b7e5.png",
-    "static/media/soaking_village.png": "/bunny-snek-atlas-app/static/media/soaking_village.59013ab966c5487b76f0.png",
     "static/media/map.png": "/bunny-snek-atlas-app/static/media/map.046e94ef89c8b9374b65.png",
     "index.html": "/bunny-snek-atlas-app/index.html",
     "main.09b66165.css.map": "/bunny-snek-atlas-app/static/css/main.09b66165.css.map",
-    "main.62741b7e.js.map": "/bunny-snek-atlas-app/static/js/main.62741b7e.js.map",
+    "main.c59fc6f7.js.map": "/bunny-snek-atlas-app/static/js/main.c59fc6f7.js.map",
     "787.7dcce817.chunk.js.map": "/bunny-snek-atlas-app/static/js/787.7dcce817.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09b66165.css",
-    "static/js/main.62741b7e.js"
+    "static/js/main.c59fc6f7.js"
   ]
 }
