@@ -1,5 +1,5 @@
 import './Map.css';
-import mapImage from '../img/test.png';
+import mapImage from '../img/map.png';
 import mapDetails from '../data/mapDetails.json';
 import { findCoordinates } from '../data/dataUtils';
 import { useRef, useState } from 'react';
