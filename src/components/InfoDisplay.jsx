@@ -1,6 +1,7 @@
 import './InfoDisplay.css';
 import Map from './Map';
 import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating, parseType } from './InfoDisplay_Utils';
+import { Gallery } from './Gallery';
 
 const InfoDisplay = (props) => {
   const {
@@ -38,6 +39,7 @@ const InfoDisplay = (props) => {
     raidCount,
     rating,
     type,
+    photos,
   } = currentPlace;
 
   const typeIcon = parseType(type, rating);
@@ -98,6 +100,11 @@ const InfoDisplay = (props) => {
         </section>
         <section className="InfoDisplay-description">
           {descriptionList}
+        </section>
+        <section>
+          <Gallery
+            photos={photos}
+          />
         </section>
       </main>
     </div>
