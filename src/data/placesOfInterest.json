@@ -77,7 +77,7 @@
       {
         "id": 6,
         "name": "Respite House",
-        "type": "Base",
+        "type": "Blind Portal Base",
         "biomes": [ "Plains", "Dark Forest" ],
         "rating": 3,
         "location": { "x": 42, "y": 69, "z": -975 },
@@ -159,7 +159,8 @@
         "location": { "x": -13, "y": -50, "z": 1306 },
         "raidCount": -1,
         "description": [
-          "This base was established to facilitate the exploration of Superpoint Caverns, located deep below the River Maze, without having to trek back to the River Maze Checkpoint. Exploration has been limited as the base's mob neighbours still need to be cleared out of the immediate area."
+          "This base was established to facilitate the exploration of Superpoint Caverns, located deep below the River Maze, without having to trek back to the River Maze Checkpoint. This is the first base to have been delibrately set up deep underground.",
+          "Exploration has been limited as the base's mob neighbours still need to be cleared out of the immediate area."
         ],
         "photos": ["superpoint_caverns.png"]
       }
@@ -217,7 +218,7 @@
       {
         "id": 15,
         "name": "Bloodblast Base",
-        "type": "Base",
+        "type": "Blind Portal Base",
         "biomes": [ "Beach", "Plains" ],
         "rating": 2,
         "location": { "x": -6, "y": 64, "z": 2363 },

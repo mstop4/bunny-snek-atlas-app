@@ -81,7 +81,7 @@
   },
   {
     "ids": [ 10, 11 ],
-    "types": [ "land", "water" ]
+    "types": [ "land" ]
   },
   {
     "ids": [ 10, 12 ],
