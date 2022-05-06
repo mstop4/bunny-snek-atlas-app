@@ -354,5 +354,23 @@
         "photos": ["shattered_lands_base.png"]
       }
     ]
+  },
+  {
+    "regionName": "Ring Valleys",
+    "places": [
+      {
+        "id": 24,
+        "name": "Canine Bank Base",
+        "type": "Base",
+        "biomes": [ "Old Growth Pine Taiga" ],
+        "rating": 1,
+        "location": { "x": 1624, "y": 74, "z": 466 },
+        "raidCount": -1,
+        "description": [
+          "Built on the banks of the Otter River and near the Otter Delta Outpost, this base gets a lot of wolf and fox visitors."
+        ],
+        "photos": ["canine_bank_base.png"]
+      }
+    ]
   }
 ]
