@@ -10,6 +10,10 @@
         "rating": 5,
         "location": { "x": -298, "y": 78, "z": 148 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
         "description": [
           "The first settlement founded in Bunny Snek. The various cave networks, connected to Arch House by several stone bridges. provided the bountiful resources for the base."
         ],
@@ -23,6 +27,10 @@
         "rating": 5,
         "location": { "x": -292, "y": 66, "z": 596 },
         "raidCount": 1,
+        "netherPortalDetails": {
+          "overworld": "fenced",
+          "nether": "covered"
+        },
         "description": [
           "The village was once constantly besieged by monsters, until it had only two survivors left. Since then, it has fully recovered and has become the most successful settlement in Bunny Snek. It serves as a central Nether hub where many other settlements can be reached. The base is located in a mountain hideout near the village's church, in the northern part of the village.",
           "Some notable landmarks in Struggle are the automatic sugar cane farm, the kelp farm, the Raid memorial banner, and the Memory Hole."
@@ -37,6 +45,10 @@
         "rating": 4,
         "location": { "x": -789, "y": 69, "z": 72 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
         "description": [
           "The first village discovered in Bunny Snek, spotted from high atop Roselook Hill.",
           "Monster sieges once reduced the population of the village to a single villager, nearly dooming it. To save it, a long underground railway was built connecting Roselook to Struggle via Arch House. Ironically, villagers from the now booming Struggle Village were migrated to Roselook in order to repopulate it."
@@ -51,6 +63,10 @@
         "rating": 1,
         "location": { "x": -828, "y": 91, "z": 708 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "A small village built on the slopes of Cornflower Mountain. It was discovered during a survey to find a land route between Roselook and Soaking."
         ],
@@ -64,6 +80,10 @@
         "rating": -1,
         "location": { "x": -790, "y": 76, "z": -395 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "A village located on the northern end of Uneven Swamp. Was thought to be settled by villagers, but it is now know to be abandoned."
         ],
@@ -82,6 +102,10 @@
         "rating": 3,
         "location": { "x": 42, "y": 69, "z": -975 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "exposed",
+          "nether": "covered"
+        },
         "description": [
           "A base founded after escaping the first treacherous trek through the Shores of No Respite in the Nether."
         ],
@@ -95,6 +119,10 @@
         "rating": 3,
         "location": { "x": 262, "y": 38, "z": -1080 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "A strange cubic room found in the Groan Mineshaft that was occupied by a single Enderman. Now it is a rest stop for those exploring the mines."
         ],
@@ -113,6 +141,10 @@
         "rating": 0,
         "location": { "x": 28, "y": 62, "z": 17 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "Bunny Snek's spawn area. No permanent settlement has been established here yet. There are plans to build a tower at the world's origin nearby."
         ],
@@ -131,6 +163,10 @@
         "rating": 3,
         "location": { "x": 257, "y": 124, "z": 458 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
         "description": [
           "The first settlement established after crossing the 1.18 Sea, past Arch House Area's Eastern Frontier."
         ],
@@ -144,6 +180,10 @@
         "rating": 3,
         "location": { "x": 12, "y": 62, "z": 1019 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "This base was meant to be a temporary checkpoint for those who needed a rest after boating across the Darkwood Lagoons fromn the north or navigating the River Maze from the south. The cave systems found at the bottoms of the Lilac Ravine and Inevitable Falls Cave and their plentiful resources have made this base a necessary drop-off point.",
           "A tower had been constructed as a viewing platform, allowing one to survey the River Maze forest."
@@ -158,6 +198,10 @@
         "rating": 1,
         "location": { "x": -13, "y": -50, "z": 1306 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
         "description": [
           "This base was established to facilitate the exploration of Superpoint Caverns, located deep below the River Maze, without having to trek back to the River Maze Checkpoint. This is the first base to have been delibrately set up deep underground.",
           "Exploration has been limited as the base's mob neighbours still need to be cleared out of the immediate area."
@@ -177,6 +221,10 @@
         "rating": 3,
         "location": { "x": -950, "y": 79, "z": 1436 },
         "raidCount": 1,
+        "netherPortalDetails": {
+          "overworld": "fenced",
+          "nether": "covered"
+        },
         "description": [
           "This village was once terrorized by the Illagers of Soaking Outpost to the south. After they were cleared out, they organized one final raid on the villager, but were ultimately defeated.",
           "Soaking is the home of the first automated mob grinder in Bunny Snek."
@@ -191,6 +239,10 @@
         "rating": 5,
         "location": { "x": -1508, "y": 73, "z": 612 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "fenced",
+          "nether": "semi-covered"
+        },
         "description": [
           "The most prosperous village in the Soaking Savanna region. It sits atop the Diamond Savanna Mine and is the home of the first automatic chicken cooker."
         ],
@@ -204,6 +256,10 @@
         "rating": 3,
         "location": { "x": -1155, "y": 69, "z": 502 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
         "description": [
           "The gateway between the Soaking Savanna and Arch House Area regions. The structure of this village had been distorted by the 1.18 update; however, the village had already been long abandoned. A repopulation project is underway, by immigrating villagers from the Savanna Dam and Cornflower Villages.",
           "Shattered Village is surrounded by numerous natural landmarks, such as the Triple Spire Caverns, Stalactite Thicket Caverns and Crate Lake, and the Split Feelings Forest."
@@ -223,6 +279,10 @@
         "rating": 2,
         "location": { "x": -6, "y": 64, "z": 2363 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "exposed",
+          "nether": "covered"
+        },
         "description": [
           "This base mainly serves as a connection between Beep Beep Sheep Mountain in the Overworld with Bloodblast Forest in the nether."
         ],
@@ -241,6 +301,10 @@
         "rating": 3,
         "location": { "x": -1419, "y": 118, "z": 2795 },
         "raidCount": 1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
         "description": [
           "A mountainside village covered in a meadow of its two namesake flowers: the azure bluet and dandelion.",
           "The steep terrain makes travelling around the village a bit challenging, and this same steep terrain helped the village survive its first raid. Many Illagers fell and were trapped by the nearby crevasses and steep river valley."
@@ -255,6 +319,10 @@
         "rating": 0,
         "location": { "x": -834, "y": 116, "z": 3002 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "The small, seculded neighbours of Azurelion Village. Despite its small size, it has a boom population."
         ],
@@ -272,9 +340,14 @@
         "biomes": [ "Plains", "River" ],
         "rating": 0,
         "location": { "x": 1253, "y": 63, "z": 1691 },
-        "raidCount": 0,
+        "raidCount": 1,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
-          "The western marine gateway to the Para-Arch Area, one of the three villages that make up the region."
+          "The western marine gateway to the Para-Arch Area, one of the three villages that make up the region.",
+          "After a raid on the Otter Delta Outpost to the far north, the Illagers sought revenge by attack this village."
         ],
         "photos": ["turtle_golem_village.png"]
       },
@@ -286,6 +359,10 @@
         "rating": 0,
         "location": { "x": 1348, "y": 70, "z": 1428 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "One of the three villages that make up the Para-Arch Area."
         ],
@@ -299,6 +376,10 @@
         "rating": 2,
         "location": { "x": 1376, "y": 62, "z": 1714 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
         "description": [
           "The Nether gateway to the Para-Arch area. Originally planned to be built in between Turtle Golem Village and Beaver Dam Village, the sheltered resevoir of the current location was a more attractive choice."
         ],
@@ -312,6 +393,10 @@
         "rating": 0,
         "location": { "x": 1756, "y": 63, "z": 1348 },
         "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
         "description": [
           "One of the three villages that make up the Para-Arch Area."
         ],
@@ -327,9 +412,13 @@
         "name": "Bastion Crevasse",
         "type": "Base",
         "biomes": [ "Plains" ],
-        "rating": 2,
+        "rating": 3,
         "location": { "x": 732, "y": 63, "z": 2657 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "semi-Covered"
+        },
         "description": [
           "This base mainly serves as a connection between the Overworld and Angry Boar Bastion in the Nether."
         ],
@@ -348,6 +437,10 @@
         "rating": 2,
         "location": { "x": 1603, "y": 89, "z": 2172 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "exposed"
+        },
         "description": [
           "This base was established to study the strange, clashing biomes in the Shattered Lands."
         ],
@@ -366,6 +459,10 @@
         "rating": 1,
         "location": { "x": 1624, "y": 74, "z": 466 },
         "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "exposed",
+          "nether": "exposed"
+        },
         "description": [
           "Built on the banks of the Otter River and near the Otter Delta Outpost, this base gets a lot of wolf and fox visitors."
         ],

@@ -1,4 +1,4 @@
-import { faBuilding, faBuildingCircleExclamation, faBuildingCircleXmark, faFire, faHouse, faHouseChimney, faHouseCircleExclamation, faHouseCircleXmark, faQuestion, faRoad, faStar, faTrain, faWater } from "@fortawesome/free-solid-svg-icons";
+import { faBuilding, faBuildingCircleExclamation, faBuildingCircleXmark, faFire, faHouse, faHouseCircleExclamation, faHouseCircleXmark, faQuestion, faRoad, faStar, faTrain, faWater } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CONNECTION_SYMBOLS = {
@@ -161,4 +161,23 @@ export const parseDescription = (description) => {
 
 export const parseLocation = (location) => {
   return location ? `${location.x}, ${location.y}, ${location.z}` : "";
+}
+
+export const parseNetherPortalDetails = (details) => {
+  const { overworld, nether } = details;
+
+  if (overworld === 'none' && nether === 'none') {
+    return <td>None</td>;
+  }
+
+  return <td>
+    <ul>
+      <li><span className="InfoDisplay-netherPortalHeading">Overworld:</span> {capitalizeWord(overworld)}</li>
+      <li><span className="InfoDisplay-netherPortalHeading">Nether:</span> {capitalizeWord(nether)}</li>
+    </ul>
+  </td>;
+}
+
+const capitalizeWord = (word) => {
+  return word.charAt(0).toUpperCase() + word.slice(1);
 }

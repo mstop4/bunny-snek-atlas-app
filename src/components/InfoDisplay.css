@@ -78,3 +78,8 @@
   font-weight: 600;
   color: #80a0ff;
 }
+
+.InfoDisplay-netherPortalHeading {
+  font-weight: 500;
+  font-style: italic;
+}

@@ -1,6 +1,6 @@
 import './InfoDisplay.css';
 import Map from './Map';
-import { findConnections, parseBiomes, parseDescription, parseLocation, parseRating, parseType } from './InfoDisplay_Utils';
+import { findConnections, parseBiomes, parseDescription, parseLocation, parseNetherPortalDetails, parseRating, parseType } from './InfoDisplay_Utils';
 import { Gallery } from './Gallery';
 
 const InfoDisplay = (props) => {
@@ -40,6 +40,7 @@ const InfoDisplay = (props) => {
     rating,
     type,
     photos,
+    netherPortalDetails,
   } = currentPlace;
 
   const typeIcon = parseType(type, rating);
@@ -48,6 +49,7 @@ const InfoDisplay = (props) => {
   const locationString = parseLocation(location);
   const ratingStars = parseRating(rating);
   const connectionList = findConnections(connectionsData, placesData, selectedPlace, onPlaceSelected, onPlacehovered);
+  const netherPortalList = parseNetherPortalDetails(netherPortalDetails);
 
   return (
     <div className="InfoDisplay-container">
@@ -81,6 +83,10 @@ const InfoDisplay = (props) => {
               <tr>
                 <th>Raids</th>
                 <td>{raidCount === -1 ? "N/A" : raidCount}</td>
+              </tr>
+              <tr>
+                <th>Nether Portal</th>
+                {netherPortalList}
               </tr>
               <tr>
                 <th>Connections</th>
