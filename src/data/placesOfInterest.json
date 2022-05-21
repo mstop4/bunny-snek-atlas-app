@@ -324,7 +324,7 @@
           "nether": "none"
         },
         "description": [
-          "The small, seculded neighbours of Azurelion Village. Despite its small size, it has a boom population."
+          "The small, seculded neighbours of Azurelion Village. Despite its small size, it has a booming population."
         ],
         "photos": ["matchstick_village.png"]
       }
@@ -449,14 +449,14 @@
     ]
   },
   {
-    "regionName": "Ring Valleys",
+    "regionName": "Ring Rivers",
     "places": [
       {
         "id": 24,
         "name": "Canine Bank Base",
         "type": "Base",
         "biomes": [ "Old Growth Pine Taiga" ],
-        "rating": 1,
+        "rating": 2,
         "location": { "x": 1624, "y": 74, "z": 466 },
         "raidCount": -1,
         "netherPortalDetails": {
@@ -467,6 +467,24 @@
           "Built on the banks of the Otter River and near the Otter Delta Outpost, this base gets a lot of wolf and fox visitors."
         ],
         "photos": ["canine_bank_base.png"]
+      },
+      {
+        "id": 25,
+        "name": "Pretzel River Heights Base",
+        "type": "Base",
+        "biomes": [ "Plains" ],
+        "rating": 2,
+        "location": { "x": 1635, "y": 102, "z": 947 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "covered",
+          "nether": "covered"
+        },
+        "description": [
+          "This base was established to be a halfway point of several routes between Canine Bank Base and the various settlements in the Para-Arch Area.",
+          "Originally, the base was established in the Pretzel River Resevoir to the south, but the terrain and vantage point of Pretzel River Heights deem to be a better choice."
+        ],
+        "photos": ["pretzel_river_heights_base.png"]
       }
     ]
   }
