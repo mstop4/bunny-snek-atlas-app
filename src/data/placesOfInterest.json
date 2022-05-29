@@ -206,7 +206,7 @@
         "type": "Base",
         "baseStructureType": "House",
         "biomes": [ "Dripstone Caves" ],
-        "rating": 1,
+        "rating": 2,
         "location": { "x": -13, "y": -50, "z": 1306 },
         "raidCount": -1,
         "netherPortalDetails": {
@@ -229,12 +229,12 @@
         "location": { "x": 765, "y": 61, "z": 1009 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "overworld": "none",
-          "nether": "none"
+          "overworld": "covered",
+          "nether": "covered"
         },
         "description": [
           "A base located beside the Reverse Oasis: two lakes that form a clearing in the middle of dense Heavy Woods.",
-          "The base is currently rather isolated and difficult to access, being surrounded by dense forest and rivers."
+          "Being surrounded by dense forest and rivers,  this base is rather isolated and difficult to access by land and water. The only nether connection available is via Superpoint Caverns."
         ],
         "photos": ["reverse_oasis_base.png"]
       }
