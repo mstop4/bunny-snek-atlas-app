@@ -2,36 +2,34 @@
   position: relative;
 }
 
-.Map-container > img {
+.Map-container img {
+  display: block;
   height: 65vh;
 }
 
-.Map-markerSelected {
+.Map-svgContainer{
   position: absolute;
-  display: inline;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: red;
-  border: 1px black solid;
+  top: 0;
+  left: 0;
 }
 
-.Map-markerUnselected {
-  position: absolute;
-  display: inline;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #e0e0e0c0;
-  border: 1px #000000c0 solid;
+.Map-marker_selected {
+  r: 4.5;
+  stroke: black;
+  stroke-width: 1;
+  fill: red;
 }
 
-.Map-markerHovered {
-  position: absolute;
-  display: inline;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #40c0ff;
-  border: 1px black solid;
+.Map-marker_unselected {
+  r: 4.5;
+  stroke: #000000c0;
+  stroke-width: 1;
+  fill: #e0e0e0c0;
+}
+
+.Map-marker_hovered {
+  r: 4.5;
+  stroke: black;
+  stroke-width: 1;
+  fill: #40c0ff;
 }

@@ -8,8 +8,8 @@ export const calculateCoords = (mapDimensions, coords, mapDetails) => {
     }
 
     return {
-      left: `${mapImgCoords.x - 4}px`,
-      top: `${mapImgCoords.z - 4}px`,
+      cx: `${mapImgCoords.x}px`,
+      cy: `${mapImgCoords.z}px`,
       display: 'inline',
     };
   }

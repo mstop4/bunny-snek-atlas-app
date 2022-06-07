@@ -11,11 +11,10 @@ const MapMarker = (props) => {
   const cssStyle = calculateCoords(mapDimensions, coords, mapSettings);
 
   return (
-    <div
+    <circle
       className={type}
       style={cssStyle}
-    >
-    </div>
+    />
   );
 }
 
@@ -36,10 +35,10 @@ const Map = (props) => {
     const markers = []
     for (const place of placeData) {
       const coords = findCoordinates(placeData, place.name);
-      let type = 'Map-markerUnselected';
+      let type = 'Map-marker_unselected';
 
-      if (place.name === selectedPlace) type = 'Map-markerSelected';
-      else if (place.name === hoveredPlace) type = 'Map-markerHovered';
+      if (place.name === selectedPlace) type = 'Map-marker_selected';
+      else if (place.name === hoveredPlace) type = 'Map-marker_hovered';
 
       markers.push(<MapMarker
         key={place.name}
@@ -62,7 +61,9 @@ const Map = (props) => {
         ref={mapElem}
         onLoad={onMapImgLoad}
       />
-      {mapMarkers}
+      <svg className="Map-svgContainer" width="100%" height="100%">
+        {mapMarkers}
+      </svg>
     </div>
   )
 }
