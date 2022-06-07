@@ -237,6 +237,24 @@
           "Being surrounded by dense forest and rivers,  this base is rather isolated and difficult to access by land and water. The only nether connection available is via Superpoint Caverns."
         ],
         "photos": ["reverse_oasis_base.png"]
+      },
+      {
+        "id": 27,
+        "name": "Sprawling Cave Base",
+        "type": "Base",
+        "baseStructureType": "Natural Cave",
+        "biomes": [ "Birch Forest" ],
+        "rating": 1,
+        "location": { "x": 246, "y": 70, "z": 1272 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
+        "description": [
+          "This base was founded during an expedition to map out the Wooded Lands."
+        ],
+        "photos": ["sprawling_cave_base.png"]
       }
     ]
   },
