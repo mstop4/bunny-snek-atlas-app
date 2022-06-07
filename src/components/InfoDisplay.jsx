@@ -6,7 +6,8 @@ import { Gallery } from './Gallery';
 const InfoDisplay = (props) => {
   const {
     placesData,
-    connectionsData,
+    connectionsByDistance,
+    connectionsByCoordsPairs,
     selectedPlace,
     hoveredPlace,
     setSelectedPlace,
@@ -17,7 +18,7 @@ const InfoDisplay = (props) => {
     setSelectedPlace(place);
   }
 
-  const onPlacehovered = (place) => {
+  const onPlaceHovered = (place) => {
     setHoveredPlace(place);
   }
 
@@ -48,7 +49,7 @@ const InfoDisplay = (props) => {
   const descriptionList = parseDescription(description);
   const locationString = parseLocation(location);
   const ratingStars = parseRating(rating);
-  const connectionList = findConnections(connectionsData, placesData, selectedPlace, onPlaceSelected, onPlacehovered);
+  const connectionByDistanceList = findConnections(connectionsByDistance, placesData, selectedPlace, onPlaceSelected, onPlaceHovered);
   const netherPortalList = parseNetherPortalDetails(netherPortalDetails);
 
   return (
@@ -92,7 +93,7 @@ const InfoDisplay = (props) => {
                 <th>Connections</th>
                 <td>
                   <ul>
-                    {connectionList}
+                    {connectionByDistanceList}
                   </ul>
                 </td>
               </tr>
@@ -102,6 +103,7 @@ const InfoDisplay = (props) => {
             selectedPlace={selectedPlace}
             hoveredPlace={hoveredPlace}
             placeData={placesData}
+            connectionsByCoordsPairs={connectionsByCoordsPairs}
           />
         </section>
         <section className="InfoDisplay-description">

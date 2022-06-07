@@ -4,11 +4,12 @@ import Header from './Header';
 import InfoDisplay from './InfoDisplay';
 import placesJson from '../data/placesOfInterest.json';
 import connections from '../data/connections.json';
-import { calculateConnectionDistances, flattenPlaceData } from '../data/dataUtils';
+import { calculateConnectionDistances, flattenPlaceData, getConnectionCoordPairs } from '../data/dataUtils';
 import { useState } from 'react';
 
 const flattenedPlacesData = flattenPlaceData(placesJson);
-const processedConnections = calculateConnectionDistances(connections, flattenedPlacesData);
+const connectionsByDistance = calculateConnectionDistances(connections, flattenedPlacesData);
+const connectionsByCoordsPairs = getConnectionCoordPairs(connections, flattenedPlacesData);
 
 const App = () => {
   const [selectedPlace, setSelectedPlace] = useState(null);
@@ -24,7 +25,8 @@ const App = () => {
       />
       <InfoDisplay
         placesData={flattenedPlacesData}
-        connectionsData={processedConnections}
+        connectionsByDistance={connectionsByDistance}
+        connectionsByCoordsPairs={connectionsByCoordsPairs}
         selectedPlace={selectedPlace}
         hoveredPlace={hoveredPlace}
         setSelectedPlace={setSelectedPlace}
