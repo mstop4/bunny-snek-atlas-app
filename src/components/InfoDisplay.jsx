@@ -2,22 +2,40 @@ import './InfoDisplay.css';
 import Map from './Map';
 import { findConnections, parseBiomes, parseDescription, parseLocation, parseNetherPortalDetails, parseRating, parseType } from './InfoDisplay_Utils';
 import { Gallery } from './Gallery';
+import { useState } from 'react';
+
+const ConnectionsToggle = (props) => {
+  const { showNetherConnections, setShowNetherConnections } = props;
+
+  const handleChange = (value) => {
+    setShowNetherConnections(value);
+  }
+
+  return (
+    <div className="InfoDisplay-toggleConnectionsContainer">
+      <label htmlFor="InfoDisplay-connectionsToggle">Show Nether Connections</label>
+      <input id="InfoDisplay-connectionsToggle" type="checkbox" checked={showNetherConnections} onChange={() => handleChange(!showNetherConnections)} />
+    </div>
+  )
+}
 
 const InfoDisplay = (props) => {
   const {
     placesData,
-    connectionsData,
+    connectionsByDistance,
+    connectionsByCoordsPairs,
     selectedPlace,
     hoveredPlace,
     setSelectedPlace,
     setHoveredPlace,
   } = props;
+  const [showNetherConnections, setShowNetherConnections] = useState(true);
 
   const onPlaceSelected = (place) => {
     setSelectedPlace(place);
   }
 
-  const onPlacehovered = (place) => {
+  const onPlaceHovered = (place) => {
     setHoveredPlace(place);
   }
 
@@ -48,60 +66,68 @@ const InfoDisplay = (props) => {
   const descriptionList = parseDescription(description);
   const locationString = parseLocation(location);
   const ratingStars = parseRating(rating);
-  const connectionList = findConnections(connectionsData, placesData, selectedPlace, onPlaceSelected, onPlacehovered);
+  const connectionByDistanceList = findConnections(connectionsByDistance, placesData, selectedPlace, onPlaceSelected, onPlaceHovered);
   const netherPortalList = parseNetherPortalDetails(netherPortalDetails);
 
   return (
-    <div className="InfoDisplay-container">
+    <div className="InfoDisplay-outerContainer">
       <header>
         <h1 className="InfoDisplay-title">{name}</h1>
       </header>
       <main>
         <section className="InfoDisplay-summary">
-          <table className="InfoDisplay-infobox">
-            <tbody>
-              <tr>
-                <th>Type</th>
-                <td>{typeIcon}</td>
-              </tr>
-              <tr>
-                <th>Biome</th>
-                <td>
-                  <ul>
-                    {biomeList}
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th>Rating</th>
-                <td>{ratingStars}</td>
-              </tr>
-              <tr>
-                <th>Location</th>
-                <td>{locationString}</td>
-              </tr>
-              <tr>
-                <th>Raids</th>
-                <td>{raidCount === -1 ? "N/A" : raidCount}</td>
-              </tr>
-              <tr>
-                <th>Nether Portal</th>
-                {netherPortalList}
-              </tr>
-              <tr>
-                <th>Connections</th>
-                <td>
-                  <ul>
-                    {connectionList}
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="InfoDisplay-innerContainer">
+            <table className="InfoDisplay-infobox">
+              <tbody>
+                <tr>
+                  <th>Type</th>
+                  <td>{typeIcon}</td>
+                </tr>
+                <tr>
+                  <th>Biome</th>
+                  <td>
+                    <ul>
+                      {biomeList}
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Rating</th>
+                  <td>{ratingStars}</td>
+                </tr>
+                <tr>
+                  <th>Location</th>
+                  <td>{locationString}</td>
+                </tr>
+                <tr>
+                  <th>Raids</th>
+                  <td>{raidCount === -1 ? "N/A" : raidCount}</td>
+                </tr>
+                <tr>
+                  <th>Nether Portal</th>
+                  {netherPortalList}
+                </tr>
+                <tr>
+                  <th>Connections</th>
+                  <td>
+                    <ul>
+                      {connectionByDistanceList}
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <ConnectionsToggle
+              showNetherConnections={showNetherConnections}
+              setShowNetherConnections={setShowNetherConnections}
+            />
+          </div>
           <Map
             selectedPlace={selectedPlace}
             hoveredPlace={hoveredPlace}
             placeData={placesData}
+            connectionsByCoordsPairs={connectionsByCoordsPairs}
+            showNetherConnections={showNetherConnections}
           />
         </section>
         <section className="InfoDisplay-description">

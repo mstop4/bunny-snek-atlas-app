@@ -6,7 +6,6 @@ export const Gallery = (props) => {
   const { photosBaseUrl } = settings;
 
   const photoElems = [];
-  console.log(photos);
   for (const photo of photos) {
     photoElems.push(
       <img

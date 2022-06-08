@@ -19,7 +19,7 @@ export const findCoordinates = (placeData, placeName) => {
 };
 
 export const calculateConnectionDistances = (connectionsData, placeData) => {
-  return connectionsData.map((connection) => {
+  const results = connectionsData.map((connection) => {
     const placeAId = connection.ids[0];
     const placeBId = connection.ids[1];
     const locationA = placeData.find((place) => place.id === placeAId).location;
@@ -31,6 +31,34 @@ export const calculateConnectionDistances = (connectionsData, placeData) => {
     return {
       ...connection,
       distance,
-    } 
-  })
+    };
+  });
+
+  return results;
+}
+
+export const getConnectionCoordPairs = (connectionsData, placeData) => {
+  const results = [];
+  
+  for (const connection of connectionsData) {
+    if (!connection.types.includes('nether')) continue;
+
+    const placeAId = connection.ids[0];
+    const placeBId = connection.ids[1];
+    const locationA = placeData.find((place) => place.id === placeAId).location;
+    const locationB = placeData.find((place) => place.id === placeBId).location;
+
+    results.push([
+      {
+        x: locationA.x,
+        z: locationA.z,
+      },
+      {
+        x: locationB.x,
+        z: locationB.z,
+      }
+    ]);
+  };
+
+  return results;
 }

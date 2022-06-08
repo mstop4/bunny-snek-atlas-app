@@ -134,6 +134,25 @@
           "A strange cubic room found in the Groan Mineshaft that was occupied by a single Enderman. Now it is a rest stop for those exploring the mines."
         ],
         "photos": ["ender_base.png"]
+      },
+      {
+        "id": 28,
+        "name": "Cut Hamlet",
+        "type": "Village",
+        "baseStructureType": "House",
+        "biomes": [ "Plains" ],
+        "rating": 1,
+        "location": { "x": -379, "y": 67, "z": -1243 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "fenced",
+          "nether": "covered"
+        },
+        "description": [
+          "The village that never was. The first base built after the 1.19 update.",
+          "It was intially a village that started to generate in 1.17, but was never finished due to the changes in world generation in 1.19."
+        ],
+        "photos": ["cut_hamlet.png"]
       }
     ]
   },
