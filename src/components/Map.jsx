@@ -19,7 +19,7 @@ const MapMarker = (props) => {
 }
 
 const MapConnection = (props) => {
-  const { mapDimensions, coordsPair, type } = props;
+  const { mapDimensions, coordsPair } = props;
   const { map: mapSettings} = settings;
   const details = calculateConnectionCoords(mapDimensions, coordsPair, mapSettings);
 
@@ -35,7 +35,13 @@ const MapConnection = (props) => {
 }
 
 const Map = (props) => {
-  const { placeData, selectedPlace, hoveredPlace, connectionsByCoordsPairs } = props;
+  const {
+    placeData,
+    selectedPlace,
+    hoveredPlace,
+    connectionsByCoordsPairs,
+    showNetherConnections,
+  } = props;
   const [mapDimensions, setMapDimensions] = useState({ x: 0, y: 0 });
   const mapElem = useRef(null);
 
@@ -94,7 +100,7 @@ const Map = (props) => {
         onLoad={onMapImgLoad}
       />
       <svg className="Map-svgContainer" width="100%" height="100%">
-        {netherConnections}
+        {showNetherConnections && netherConnections}
         {mapMarkers}
       </svg>
     </div>
