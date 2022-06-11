@@ -75,7 +75,12 @@
           "A small village built on the slopes of Cornflower Mountain. It was discovered during a survey to find a land route between Roselook and Soaking."
         ],
         "photos": ["cornflower_village.png"]
-      },
+      }
+    ]
+  },
+  {
+    "regionName": "Uneven Swamp Area",
+    "places": [
       {
         "id": 5,
         "name": "Uneven Village",
@@ -566,6 +571,29 @@
           "Originally, the base was established in the Pretzel River Resevoir to the south, but the terrain and vantage point of Pretzel River Heights deem to be a better choice."
         ],
         "photos": ["pretzel_river_heights_base.png"]
+      }
+    ]
+  },
+  {
+    "regionName": "Northern Seas",
+    "places": [
+      {
+        "id": 29,
+        "name": "Stony Bar Village",
+        "type": "Village",
+        "baseStructureType": "Natural Cave",
+        "biomes": [ "Stony Shore", "Plains", "Forest" ],
+        "rating": 1,
+        "location": { "x": -786, "y": 66, "z": -1802 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "overworld": "none",
+          "nether": "none"
+        },
+        "description": [
+          "A village built on the cliffside, protected from the sea by stony shores. The natural cave system within the shore made it a good location to set up a base, despite the occasional Drowned visitor."
+        ],
+        "photos": ["stony_bar_village.png"]
       }
     ]
   }
