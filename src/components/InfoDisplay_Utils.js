@@ -84,7 +84,7 @@ export const findConnections = (connectionsData, placeData, placeName, onPlaceSe
   return connectionList;
 }
 
-export const parseType = (type, rating) => {
+export const parseType = (type, rating, baseStructureType) => {
   if (rating === -1) {
     return (
       <>
@@ -92,7 +92,7 @@ export const parseType = (type, rating) => {
           ? <FontAwesomeIcon icon={faBuildingCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Village"/>
           : <FontAwesomeIcon icon={faHouseCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Base"/>
         }
-        {type}
+        {`Abandoned ${type}`}
       </>
     );
   } else if (rating === 0) {
@@ -102,7 +102,7 @@ export const parseType = (type, rating) => {
           ? <FontAwesomeIcon icon={faBuildingCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Village"/>
           : <FontAwesomeIcon icon={faHouseCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Base"/>
         }
-        {type}
+        {`Unsettled ${type}`}
       </>
     );
   } else {
@@ -112,7 +112,7 @@ export const parseType = (type, rating) => {
           ? <FontAwesomeIcon icon={faBuilding} className="InfoDisplay-typeIcon" title="Settled Village"/>
           : <FontAwesomeIcon icon={faHouse} className="InfoDisplay-typeIcon" title="Settled Base"/>
         }
-        {type}
+        {`${type}: ${baseStructureType}`}
       </>
     );
   }
@@ -193,6 +193,22 @@ export const parseNetherPortalDetails = (details) => {
       <li><span className="InfoDisplay-netherPortalHeading">Nether:</span> {capitalizeWord(netherPortalType)}</li>
     </ul>
   </td>;
+}
+
+export const parseMineralSources = (mineralSources) => {
+  const mineralSourcesList = [];
+
+  if (mineralSources.length === 0) {
+    mineralSourcesList.push(<li key="none">None</li>);
+    return mineralSourcesList;
+  }
+
+  for (const mineralSource of mineralSources) {
+    mineralSourcesList.push(
+      <li key={mineralSource}>{mineralSource}</li>
+    );
+  }
+  return mineralSourcesList;
 }
 
 const capitalizeWord = (word) => {
