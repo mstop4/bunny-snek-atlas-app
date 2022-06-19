@@ -56,6 +56,15 @@
   border: 1px #606080 solid;
 }
 
+.InfoDisplay-netherLocations {
+  padding-bottom: 0.5rem;
+}
+
+.InfoDisplay-netherLocationItem {
+  margin-left: 1.5rem;
+  list-style: circle;
+}
+
 .InfoDisplay-description {
   padding: 0;
 }

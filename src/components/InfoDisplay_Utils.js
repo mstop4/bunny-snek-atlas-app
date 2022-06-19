@@ -164,16 +164,33 @@ export const parseLocation = (location) => {
 }
 
 export const parseNetherPortalDetails = (details) => {
-  const { overworld, nether } = details;
+  const {
+    netherLocation,
+    overworldPortalType,
+    netherPortalType,
+  } = details;
 
-  if (overworld === 'none' && nether === 'none') {
+  if (netherLocation[0] === 'None') {
     return <td>None</td>;
+  }
+
+  const netherLocationsString = [];
+  for (const location of netherLocation) {
+    netherLocationsString.push(
+      <li key={location} className="InfoDisplay-netherLocationItem">{location}</li>
+    );
   }
 
   return <td>
     <ul>
-      <li><span className="InfoDisplay-netherPortalHeading">Overworld:</span> {capitalizeWord(overworld)}</li>
-      <li><span className="InfoDisplay-netherPortalHeading">Nether:</span> {capitalizeWord(nether)}</li>
+      <li className="InfoDisplay-netherLocations">
+        <span className="InfoDisplay-netherPortalHeading">Location{(netherLocation.length > 1 ? 's' : '')}:</span>
+        <ul>
+          {netherLocationsString}
+        </ul>
+      </li>
+      <li><span className="InfoDisplay-netherPortalHeading">Overworld:</span> {capitalizeWord(overworldPortalType)}</li>
+      <li><span className="InfoDisplay-netherPortalHeading">Nether:</span> {capitalizeWord(netherPortalType)}</li>
     </ul>
   </td>;
 }
