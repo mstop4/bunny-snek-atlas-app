@@ -615,7 +615,7 @@
     "places": [
       {
         "id": 24,
-        "name": "Canine Bank Base",
+        "name": "Canine Bank",
         "type": "Base",
         "baseStructureType": "House",
         "biomes": [ "Old Growth Pine Taiga" ],
@@ -636,7 +636,7 @@
       },
       {
         "id": 25,
-        "name": "Pretzel River Heights Base",
+        "name": "Pretzel River Heights",
         "type": "Base",
         "baseStructureType": "Artificial Cave",
         "biomes": [ "Plains" ],
@@ -695,7 +695,7 @@
         "biomes": [ "Plains"],
         "mineralSources": ["Iron Gauntlet Cave"],
         "lavaSource": true,
-        "rating": 1,
+        "rating": 2,
         "location": { "x": 1389, "y": 86, "z": -454 },
         "raidCount": 0,
         "netherPortalDetails": {
