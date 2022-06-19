@@ -1,6 +1,15 @@
 import './InfoDisplay.css';
 import Map from './Map';
-import { findConnections, parseBiomes, parseDescription, parseLocation, parseNetherPortalDetails, parseRating, parseType } from './InfoDisplay_Utils';
+import {
+  findConnections,
+  parseBiomes,
+  parseDescription,
+  parseLocation,
+  parseMineralSources,
+  parseNetherPortalDetails,
+  parseRating,
+  parseType
+} from './InfoDisplay_Utils';
 import { Gallery } from './Gallery';
 import { useState } from 'react';
 
@@ -57,17 +66,21 @@ const InfoDisplay = (props) => {
     raidCount,
     rating,
     type,
+    baseStructureType,
     photos,
     netherPortalDetails,
+    mineralSources,
+    lavaSource,
   } = currentPlace;
 
-  const typeIcon = parseType(type, rating);
+  const typeIcon = parseType(type, rating, baseStructureType);
   const biomeList = parseBiomes(biomes);
   const descriptionList = parseDescription(description);
   const locationString = parseLocation(location);
   const ratingStars = parseRating(rating);
   const connectionByDistanceList = findConnections(connectionsByDistance, placesData, selectedPlace, onPlaceSelected, onPlaceHovered);
   const netherPortalList = parseNetherPortalDetails(netherPortalDetails);
+  const mineralSourceList = parseMineralSources(mineralSources);
 
   return (
     <div className="InfoDisplay-outerContainer">
@@ -102,6 +115,16 @@ const InfoDisplay = (props) => {
                 <tr>
                   <th>Raids</th>
                   <td>{raidCount === -1 ? "N/A" : raidCount}</td>
+                </tr>
+                <tr>
+                  <th>Mineral Sources</th>
+                  <td>
+                    <ul>{mineralSourceList}</ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Lava Source</th>
+                  <td>{lavaSource ? "Yes" : "No"}</td>
                 </tr>
                 <tr>
                   <th>Nether Portal</th>
