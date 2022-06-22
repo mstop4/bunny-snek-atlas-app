@@ -1,5 +1,6 @@
 import { faBuilding, faBuildingCircleExclamation, faBuildingCircleXmark, faFire, faHouse, faHouseCircleExclamation, faHouseCircleXmark, faQuestion, faRoad, faStar, faTrain, faWater } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { cloneElement } from "react";
 
 const CONNECTION_SYMBOLS = {
   land: <FontAwesomeIcon
@@ -57,11 +58,13 @@ export const findConnections = (connectionsData, placeData, placeName, onPlaceSe
 
 
       for (const connectionType of connectionTypes) {
-        if (Object.keys(CONNECTION_SYMBOLS).includes(connectionType)) {
-          connectionSymbols.push(CONNECTION_SYMBOLS[connectionType]);
-        } else {
-          connectionDetails.push(CONNECTION_SYMBOLS.unknown);
-        }
+        const symbolType = Object.keys(CONNECTION_SYMBOLS).includes(connectionType)
+          ? connectionType
+          : 'unknown';
+        
+        connectionSymbols.push(cloneElement(CONNECTION_SYMBOLS[symbolType], {
+          key: `${currentPlaceId}-${otherPlaceId}_${connectionType}`
+        }));
       }
 
       connectionList.push(
@@ -89,8 +92,8 @@ export const parseType = (type, rating, baseStructureType) => {
     return (
       <>
         {type === 'Village'
-          ? <FontAwesomeIcon icon={faBuildingCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Village"/>
-          : <FontAwesomeIcon icon={faHouseCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Base"/>
+          ? <FontAwesomeIcon key="abandonedVillage" icon={faBuildingCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Village"/>
+          : <FontAwesomeIcon key="abandonedBase" icon={faHouseCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Base"/>
         }
         {`Abandoned ${type}`}
       </>
@@ -99,8 +102,8 @@ export const parseType = (type, rating, baseStructureType) => {
     return (
       <>
         {type === 'Village'
-          ? <FontAwesomeIcon icon={faBuildingCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Village"/>
-          : <FontAwesomeIcon icon={faHouseCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Base"/>
+          ? <FontAwesomeIcon key="unsettledVillage" icon={faBuildingCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Village"/>
+          : <FontAwesomeIcon key="unsettledBase" icon={faHouseCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Base"/>
         }
         {`Unsettled ${type}`}
       </>
@@ -109,8 +112,8 @@ export const parseType = (type, rating, baseStructureType) => {
     return (
       <>
         {type === 'Village'
-          ? <FontAwesomeIcon icon={faBuilding} className="InfoDisplay-typeIcon" title="Settled Village"/>
-          : <FontAwesomeIcon icon={faHouse} className="InfoDisplay-typeIcon" title="Settled Base"/>
+          ? <FontAwesomeIcon key="settledVillage" icon={faBuilding} className="InfoDisplay-typeIcon" title="Settled Village"/>
+          : <FontAwesomeIcon key="settledBase" icon={faHouse} className="InfoDisplay-typeIcon" title="Settled Base"/>
         }
         {`${type}: ${baseStructureType}`}
       </>
@@ -184,7 +187,7 @@ export const parseNetherPortalDetails = (details) => {
   return <td>
     <ul>
       <li className="InfoDisplay-netherLocations">
-        <span className="InfoDisplay-netherPortalHeading">Location{(netherLocation.length > 1 ? 's' : '')}:</span>
+        <span className="InfoDisplay-netherPortalHeading">Location{(netherLocation.length > 1 ? 's' : '')}: {netherLocation.length === 0 ? 'None' : ''}</span>
         <ul>
           {netherLocationsString}
         </ul>

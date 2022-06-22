@@ -234,5 +234,9 @@
   {
     "ids": [24, 30],
     "types": ["water", "land", "nether"]
+  },
+  {
+    "ids": [30, 31],
+    "types": ["water"]
   }
 ]

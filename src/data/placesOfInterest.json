@@ -79,7 +79,7 @@
         "location": { "x": -828, "y": 91, "z": 708 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -105,7 +105,7 @@
         "location": { "x": -790, "y": 76, "z": -395 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -152,7 +152,7 @@
         "location": { "x": 262, "y": 38, "z": -1080 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -200,7 +200,7 @@
         "location": { "x": 28, "y": 62, "z": 17 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -247,7 +247,7 @@
         "location": { "x": 12, "y": 62, "z": 1019 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -313,7 +313,7 @@
         "location": { "x": 246, "y": 70, "z": 1272 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -376,7 +376,7 @@
         "type": "Village",
         "baseStructureType": "House",
         "biomes": [ "Taiga", "Forest" ],
-        "mineralSources": ["Lilac Ravine", "Stalactite Thicket Caverns"],
+        "mineralSources": ["Stalactite Thicket Caverns"],
         "lavaSource": false,
         "rating": 3,
         "location": { "x": -1155, "y": 69, "z": 502 },
@@ -457,7 +457,7 @@
         "lavaSource": false,
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -483,7 +483,7 @@
         "lavaSource": false,
         "raidCount": 1,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -505,7 +505,7 @@
         "location": { "x": 1348, "y": 70, "z": 1428 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -547,7 +547,7 @@
         "location": { "x": 1756, "y": 63, "z": 1348 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -673,7 +673,7 @@
         "location": { "x": -786, "y": 66, "z": -1802 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["None"],
+          "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
@@ -708,6 +708,28 @@
           "The portal on the nether side is located in the heart of the Canine Basalt Delta, making journeys between here and Canine Bank Base treacherous. Many lives have been lost just trying to secure the portal itself."
         ],
         "photos": ["hoverblock_village_1.png", "hoverblock_village_2.png"]
+      },
+      {
+        "id": 31,
+        "name": "Bunflower Village",
+        "type": "Village",
+        "baseStructureType": "House",
+        "biomes": [ "Sunflower Plains", "Flower Forest", "River", "Plains"],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 1782, "y": 66, "z": -1372 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A beautiful village sandwiched between a river and a sea of flowers.",
+          "The house base established in this village was hastily built, just so there could be a safe place to stay."
+        ],
+        "photos": ["bunflower_village.png"]
       }
     ]
   }
