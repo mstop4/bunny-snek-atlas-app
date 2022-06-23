@@ -136,7 +136,8 @@
           "netherPortalType": "covered"
         },
         "description": [
-          "A base founded after escaping the first treacherous trek through the Shores of No Respite in the Nether."
+          "A base founded after escaping the first treacherous trek through the Shores of No Respite in the Nether.",
+          "The lack of respite continues as the portal here serves as a connection to Bunflower Village to the far east, via long tunnels and treks through hostile territory in the Nether."
         ],
         "photos": ["respite_house.png"]
       },
@@ -157,7 +158,8 @@
           "netherPortalType": "none"
         },
         "description": [
-          "A strange cubic room found in the Groan Mineshaft that was occupied by a single Enderman. Now it is a rest stop for those exploring the mines."
+          "A strange cubic room found in the Groan Mineshaft that was occupied by a single Enderman. Now it is a rest stop for those exploring the mines.",
+          "The water route between here and Bunflower Village passes through an ocean monument."
         ],
         "photos": ["ender_base.png"]
       },
@@ -705,7 +707,8 @@
         },
         "description": [
           "The base itself is located slightly east of the village, inside an arch formation similar to Arch House.",
-          "The portal on the nether side is located in the heart of the Canine Basalt Delta, making journeys between here and Canine Bank Base treacherous. Many lives have been lost just trying to secure the portal itself."
+          "The portal on the nether side is located in the heart of the Canine Basalt Delta, making journeys between here and Canine Bank Base somewhat treacherous. Many lives have been lost just trying to secure the portal itself.",
+          "Find a safe path path through the delta northward to Bunflower Village has proven to be even more dangerous, due to the extreme terrain."
         ],
         "photos": ["hoverblock_village_1.png", "hoverblock_village_2.png"]
       },
@@ -721,13 +724,14 @@
         "location": { "x": 1782, "y": 66, "z": -1372 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": [],
-          "overworldPortalType": "none",
-          "netherPortalType": "none"
+          "netherLocation": ["Canine Basalt Delta", "Magma Cube's Leap"],
+          "overworldPortalType": "fenced",
+          "netherPortalType": "covered"
         },
         "description": [
           "A beautiful village sandwiched between a river and a sea of flowers.",
-          "The house base established in this village was hastily built, just so there could be a safe place to stay."
+          "The house base established in this village was hastily built, just so there could be a safe place to stay.",
+          "Since a path southward through the Canine Basalt Delta to Hoverblock Village has yet to be found, a long tunnel was constructed connecting the nether portal to Respite House instead. A special platform had to be constructed in order for the two portals on either side to connect properly. Magma Cubes and Ghasts kept assaulting the platform during construction."
         ],
         "photos": ["bunflower_village.png"]
       }
