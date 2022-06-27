@@ -734,6 +734,27 @@
           "Since a path southward through the Canine Basalt Delta to Hoverblock Village has yet to be found, a long tunnel was constructed connecting the nether portal to Respite House instead. A special platform had to be constructed in order for the two portals on either side to connect properly. Magma Cubes and Ghasts kept assaulting the platform during construction."
         ],
         "photos": ["bunflower_village.png"]
+      },
+      {
+        "id": 32,
+        "name": "Village of Boreal Bounty",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Taiga" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 2345, "y": 65, "z": -1005 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A small, but prosperous village. Its offered much resources when it was discovered."
+        ],
+        "photos": []
       }
     ]
   }
