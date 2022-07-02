@@ -19,7 +19,8 @@
           "netherPortalType": "covered"
         },
         "description": [
-          "The first settlement founded in Bunny Snek. The various cave networks, connected to Arch House by several stone bridges. provided the bountiful resources for the base."
+          "The first settlement founded in Bunny Snek. The various cave networks, connected to Arch House by several stone bridges. provided the bountiful resources for the base.",
+          "As the first settlement, it has the honour of being the only base in the world with a complete world map."
         ],
         "photos": ["arch_house.png"]
       },
@@ -632,7 +633,8 @@
           "netherPortalType": "exposed"
         },
         "description": [
-          "Built on the banks of the Otter River and near the Otter Delta Outpost, this base gets a lot of wolf and fox visitors."
+          "Built on the banks of the Otter River and near the Otter Delta Outpost, this base gets a lot of wolf and fox visitors.",
+          "The Canine Basalt Delta in the Nether was named after this base, which in turn gave its name to the Canine Basalt Domain to the north. The base itself is not part of the Canine Basalt Domain, but it does serve as its southern gateway connection the Domain with Ring Rivers."
         ],
         "photos": ["canine_bank_base.png"]
       },
@@ -687,7 +689,7 @@
     ]
   },
   {
-    "regionName": "Hoverblock Domain",
+    "regionName": "Canine Basalt Domain",
     "places": [
       {
         "id": 30,
@@ -718,9 +720,9 @@
         "type": "Village",
         "baseStructureType": "House",
         "biomes": [ "Sunflower Plains", "Flower Forest", "River", "Plains"],
-        "mineralSources": [],
+        "mineralSources": ["Bunflower Caverns"],
         "lavaSource": false,
-        "rating": 1,
+        "rating": 2,
         "location": { "x": 1782, "y": 66, "z": -1372 },
         "raidCount": 0,
         "netherPortalDetails": {

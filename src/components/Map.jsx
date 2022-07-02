@@ -1,9 +1,11 @@
 import './Map.css';
 import mapImage from '../img/map.png';
+import regionBordersSVG from '../img/regionBorders/regions.svg';
 import settings from '../data/settings.json';
 import { findCoordinates } from '../data/dataUtils';
 import { useRef, useState } from 'react';
 import { calculateCoords, calculateConnectionCoords } from './Map_Utils';
+import { useEffect } from 'react';
 
 const MapMarker = (props) => {
   const { mapDimensions, coords, type } = props;
@@ -44,7 +46,8 @@ const Map = (props) => {
   } = props;
   const [mapDimensions, setMapDimensions] = useState({ x: 0, y: 0 });
   const mapElem = useRef(null);
-
+  const regionBordersElem = useRef(null);
+ 
   const onMapImgLoad = () => {
     const mapElemRect = mapElem.current.getBoundingClientRect();
     setMapDimensions({
@@ -59,8 +62,8 @@ const Map = (props) => {
       const coords = findCoordinates(placeData, place.name);
       let type = 'Map-marker_unselected';
 
-      if (place.name === selectedPlace) type = 'Map-marker_selected';
-      else if (place.name === hoveredPlace) type = 'Map-marker_hovered';
+      if (place.name === selectedPlace.name) type = 'Map-marker_selected';
+      else if (hoveredPlace?.type === 'base' && place.name === hoveredPlace?.name) type = 'Map-marker_hovered';
 
       markers.push(<MapMarker
         key={place.name}
@@ -88,6 +91,28 @@ const Map = (props) => {
     return connections;
   }
 
+  /**
+   * Updates region highlights
+   */
+  const highlightRegion = () => {
+    const svgData = regionBordersElem.current.contentDocument;
+    const borderPaths = svgData.getElementsByTagName('path');
+
+    // Hide all border paths
+    for (const path of borderPaths) {
+      path.style.display = 'none';
+    }
+
+    if (hoveredPlace?.type === 'region') {
+      const id = hoveredPlace.name.split(' ').join('_');
+      const path = borderPaths.namedItem(id);
+      if (path) path.style.display = 'block';
+    }
+  }
+
+  // Update region highlights
+  useEffect(highlightRegion, [hoveredPlace]);
+
   const mapMarkers = createMapMarkers();
   const netherConnections = createMapConnections();
 
@@ -99,6 +124,15 @@ const Map = (props) => {
         ref={mapElem}
         onLoad={onMapImgLoad}
       />
+      <object
+        className="Map-regionBorders"
+        data={regionBordersSVG}
+        type="image/svg+xml"
+        ref={regionBordersElem}
+      >
+        Region Border
+      </object>
+
       <svg className="Map-svgContainer" width="100%" height="100%">
         {showNetherConnections && netherConnections}
         {mapMarkers}

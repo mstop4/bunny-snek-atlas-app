@@ -29,7 +29,10 @@ const RegionSection = (props) => {
         <span 
           className="Directory-placeLink"
           onClick={() => handlePlaceClick(place.name)}
-          onMouseEnter={() => handlePlaceHover(place.name)}
+          onMouseEnter={() => handlePlaceHover({
+            name: place.name,
+            type: 'base',
+          })}
           onMouseLeave={() => handlePlaceHover(null)}
         >
           {place.name}
@@ -41,7 +44,15 @@ const RegionSection = (props) => {
 
   return (
     <div className="Directory-regionSection">
-      <h2>{region.regionName}</h2>
+      <h2
+        onMouseEnter={() => handlePlaceHover({
+          name: region.regionName,
+          type: 'region',
+        })}
+        onMouseLeave={() => handlePlaceHover(null)}
+      >
+        {region.regionName}
+      </h2>
       <ul>
         {placesList}
       </ul>
