@@ -62,7 +62,7 @@ const Map = (props) => {
       const coords = findCoordinates(placeData, place.name);
       let type = 'Map-marker_unselected';
 
-      if (place.name === selectedPlace.name) type = 'Map-marker_selected';
+      if (place.name === selectedPlace) type = 'Map-marker_selected';
       else if (hoveredPlace?.type === 'base' && place.name === hoveredPlace?.name) type = 'Map-marker_hovered';
 
       markers.push(<MapMarker
