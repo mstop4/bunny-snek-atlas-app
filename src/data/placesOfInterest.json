@@ -193,14 +193,14 @@
     "places": [
       {
         "id": 8,
-        "name": "Spawn Point",
+        "name": "World Origin",
         "type": "Base",
-        "baseStructureType": "None",
-        "biomes": [ "Beach" ],
+        "baseStructureType": "House",
+        "biomes": [ "Lukewarm Ocean", "Plains", "River", "Taiga" ],
         "mineralSources": ["Dripdank Cave"],
         "lavaSource": false,
-        "rating": 0,
-        "location": { "x": 28, "y": 62, "z": 17 },
+        "rating": 1,
+        "location": { "x": 0, "y": 65, "z": 0 },
         "raidCount": -1,
         "netherPortalDetails": {
           "netherLocation": [],
@@ -208,9 +208,9 @@
           "netherPortalType": "none"
         },
         "description": [
-          "Bunny Snek's spawn area. No permanent settlement has been established here yet. There are plans to build a tower at the world's origin nearby."
+          "Formerly a simple dirt marker located at Bunny Snek's origin, now it's the start of a livable base. Replaces the original plan to establish a base at Spawn Point. There are plans to build a tower that extends to the world's build limit in the sky and deep underground."
         ],
-        "photos": ["spawn_point.png"]
+        "photos": ["world_origin.png"]
       }
     ]
   },
