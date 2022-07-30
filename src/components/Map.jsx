@@ -44,6 +44,7 @@ const Map = (props) => {
     connectionsByCoordsPairs,
     showNetherConnections,
   } = props;
+  const [mapReady, setMapReady] = useState(false);
   const [mapDimensions, setMapDimensions] = useState({ x: 0, y: 0 });
   const mapElem = useRef(null);
   const regionBordersElem = useRef(null);
@@ -54,6 +55,7 @@ const Map = (props) => {
       x: mapElemRect.width,
       y: mapElemRect.height
     });
+    setMapReady(true);
   };
 
   const createMapMarkers = () => {
@@ -95,6 +97,7 @@ const Map = (props) => {
    * Updates region highlights
    */
   const highlightRegion = () => {
+    if (!mapReady) return;
     const svgData = regionBordersElem.current.contentDocument;
     const borderPaths = svgData.getElementsByTagName('path');
 
@@ -111,32 +114,47 @@ const Map = (props) => {
   }
 
   // Update region highlights
-  useEffect(highlightRegion, [hoveredPlace]);
+  useEffect(highlightRegion, [hoveredPlace, mapReady]);
 
   const mapMarkers = createMapMarkers();
   const netherConnections = createMapConnections();
 
   return (
-    <div className="Map-container">
+    <div
+      className="Map-container"
+    >
       <img
         src={mapImage}
         alt="Map of Bunny Snek"
         ref={mapElem}
         onLoad={onMapImgLoad}
+        style={{visibility: mapReady ? 'visible' : 'hidden'}}
       />
       <object
         className="Map-regionBorders"
         data={regionBordersSVG}
         type="image/svg+xml"
         ref={regionBordersElem}
+        style={{visibility: mapReady ? 'visible' : 'hidden'}}
       >
         Region Border
       </object>
 
-      <svg className="Map-svgContainer" width="100%" height="100%">
+      <svg
+        className="Map-svgContainer"
+        width="100%"
+        height="100%"
+        style={{visibility: mapReady ? 'visible' : 'hidden'}}
+      >
         {showNetherConnections && netherConnections}
         {mapMarkers}
       </svg>
+
+      <div
+        className="Map-loading"
+        style={{visibility: !mapReady ? 'visible' : 'hidden'}}
+      >
+      </div>
     </div>
   )
 }

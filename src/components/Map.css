@@ -7,6 +7,20 @@
   height: 75vh;
 }
 
+.Map-loading {
+  position: absolute;
+  top: calc(50% - 96px);
+  left: calc(50% - 96px);
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 12px solid #FFF;
+  border-right: 12px solid transparent;
+  box-sizing: border-box;
+  animation: loadingAnim 1s ease-in-out infinite;
+}
+
 .Map-svgContainer{
   position: absolute;
   top: 0;
@@ -45,4 +59,13 @@
 .Map-netherConnection {
   stroke: #9020ff;
   stroke-width: 2.5;
+}
+
+@keyframes loadingAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
