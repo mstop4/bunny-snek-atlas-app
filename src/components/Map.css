@@ -21,15 +21,6 @@
   animation: loadingAnim 1s ease-in-out infinite;
 }
 
-@keyframes loadingAnim {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} 
-
 .Map-svgContainer{
   position: absolute;
   top: 0;
@@ -68,4 +59,13 @@
 .Map-netherConnection {
   stroke: #9020ff;
   stroke-width: 2.5;
+}
+
+@keyframes loadingAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
