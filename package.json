@@ -1,26 +1,28 @@
 {
   "name": "bunny-snek-atlas-app",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "homepage": "https://mstop4.github.io/bunny-snek-atlas-app",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^3.2.3",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.3.0",
+    "gh-pages": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "react-scripts": "^5.0.1",
-    "@svgr/webpack": "^6.2.1"
+    "@svgr/webpack": "^6.3.1",
+    "terser": "^5.14.2"
   },
   "overrides": {
-    "@svgr/webpack": "^6.2.1"
+    "@svgr/webpack": "^6.3.1",
+    "terser": "^5.14.2"
   },
   "scripts": {
     "start": "react-scripts start",
