@@ -132,13 +132,13 @@
         "location": { "x": 42, "y": 69, "z": -975 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": ["Shores of No Respite", "Big Boar Falls"],
+          "netherLocation": ["Shores of No Respite", "Big Boar Falls", "Great Respite-Bunflower Tunnel"],
           "overworldPortalType": "exposed",
           "netherPortalType": "covered"
         },
         "description": [
           "A base founded after escaping the first treacherous trek through the Shores of No Respite in the Nether.",
-          "The lack of respite continues as the portal here serves as a connection to Bunflower Village to the far east, via long tunnels and treks through hostile territory in the Nether."
+          "The lack of respite continues as the portal here serves as a connection to Bunflower Village to the far east, via the Great Repsite-Bunflower Tunnel and treks through hostile territory in the Nether."
         ],
         "photos": ["respite_house.png"]
       },
@@ -699,7 +699,7 @@
         "biomes": [ "Plains"],
         "mineralSources": ["Iron Gauntlet Cave"],
         "lavaSource": true,
-        "rating": 2,
+        "rating": 3,
         "location": { "x": 1389, "y": 86, "z": -454 },
         "raidCount": 0,
         "netherPortalDetails": {
@@ -710,7 +710,7 @@
         "description": [
           "The base itself is located slightly east of the village, inside an arch formation similar to Arch House.",
           "The portal on the nether side is located in the heart of the Canine Basalt Delta. In the beginning, journeys between here and Canine Bank Base were treacherous and many lives have been lost just trying to secure the portal itself. Because of this, the Underdog Tunnel was constructed as a safer passage between the two settlements. Magama Cubes still find their way into the tunnel, but fighting them in the narrow tunnels is much more managable than out in the open.",
-          "Find a safe path path through the delta northward to Bunflower Village has proven to be even more dangerous, due to the extreme terrain."
+          "Finding a safe path through the delta northward to Bunflower Village had proven to be even more dangerous, due to the extreme terrain. After many struggles, the Underdog Tunnel was built connecting to the Great Respite-Bunflower Tunnel, finally allowing quick passage between the two settlements."
         ],
         "photos": ["hoverblock_village_1.png", "hoverblock_village_2.png"]
       },
@@ -726,14 +726,14 @@
         "location": { "x": 1782, "y": 66, "z": -1372 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["Canine Basalt Delta", "Magma Cube's Leap"],
+          "netherLocation": ["Canine Basalt Delta", "Great Respite-Bunflower Tunnel", "Magma Cube's Leap"],
           "overworldPortalType": "fenced",
           "netherPortalType": "covered"
         },
         "description": [
           "A beautiful village sandwiched between a river and a sea of flowers.",
           "The house base established in this village was hastily built, just so there could be a safe place to stay.",
-          "Since a path southward through the Canine Basalt Delta to Hoverblock Village has yet to be found, a long tunnel was constructed connecting the nether portal to Respite House instead. A special platform had to be constructed in order for the two portals on either side to connect properly. Magma Cubes and Ghasts kept assaulting the platform during construction."
+          "In the past, a path southward through the Canine Basalt Delta to Hoverblock Village had not been found, so the Great Respite-Bunflower Tunnel was constructed connecting the nether portal to Respite House instead. A special platform had to be constructed in order for the two portals on either side to connect properly. Magma Cubes and Ghasts kept assaulting the platform during construction. In the present, the Underdog Tunnel had been built connecting to the Great Respite-Bunflower Tunnel, finally allowing quick passage between Bunflower and Hoverblock Villages."
         ],
         "photos": ["bunflower_village.png"]
       },
