@@ -715,6 +715,57 @@
         "photos": ["hoverblock_village_1.png", "hoverblock_village_2.png"]
       },
       {
+        "id": 32,
+        "name": "Village of Boreal Bounty",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Taiga" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 2345, "y": 65, "z": -1005 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A small, but prosperous village. Its offered much resources when it was discovered."
+        ],
+        "photos": ["village_of_boreal_bounty.png"]
+      }
+    ]
+  },
+  {
+    "regionName": "Loop River Wetlands",
+    "places": [
+      {
+        "id": 33,
+        "name": "Dry Spot",
+        "type": "Base",
+        "baseStructureType": "Natural Cave",
+        "biomes": [ "Forest", "Swamp"],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 1586, "y": 61, "z": -830 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
+        },
+        "description": [
+        ],
+        "photos": ["dry_spot_base.png"]
+      }
+    ]
+  },
+  {
+    "regionName": "Bunflower Domain",
+    "places": [
+      {
         "id": 31,
         "name": "Bunflower Village",
         "type": "Village",
@@ -738,15 +789,15 @@
         "photos": ["bunflower_village.png"]
       },
       {
-        "id": 32,
-        "name": "Village of Boreal Bounty",
+        "id": 34,
+        "name": "Scatterbrain Village",
         "type": "Village",
         "baseStructureType": "None",
-        "biomes": [ "Taiga" ],
+        "biomes": [ "Plains", "River", "Flower Forest"],
         "mineralSources": [],
         "lavaSource": false,
         "rating": 0,
-        "location": { "x": 2345, "y": 65, "z": -1005 },
+        "location": { "x": 2373, "y": 68, "z": -1509 },
         "raidCount": 0,
         "netherPortalDetails": {
           "netherLocation": [],
@@ -754,9 +805,8 @@
           "netherPortalType": "none"
         },
         "description": [
-          "A small, but prosperous village. Its offered much resources when it was discovered."
         ],
-        "photos": []
+        "photos": ["scatterbrain_village.png"]
       }
     ]
   }
