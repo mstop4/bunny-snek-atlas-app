@@ -58,7 +58,7 @@
         "location": { "x": -789, "y": 69, "z": 72 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["Lower Breenburn"],
+          "netherLocation": ["Lower Greenburn"],
           "overworldPortalType": "covered",
           "netherPortalType": "covered"
         },
@@ -185,6 +185,29 @@
           "It was intially a village that started to generate in 1.17, but was never finished due to the changes in world generation in 1.19."
         ],
         "photos": ["cut_hamlet.png"]
+      },
+      {
+        "id": 35,
+        "name": "Eastern Frontier Temple",
+        "type": "Ocean Monument",
+        "baseStructureType": "None",
+        "biomes": [ "Deep Cold Ocean" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 203, "y": 40, "z": -441 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "This temple was discovered long ago, but no one has the means of exploring and conquering it.",
+          "One day, a brave adventurer gathered the required gear and resources from Bunflower Village, Turtle-Beaver Resevoir, and Struggle Village to explore the inside of the temple. He had slain the Elder Guardians and was victorious, however he could not escape the temple in time and drowned.",
+          "There is current a plan to drain the interior of the temple and establish a base."
+        ],
+        "photos": []
       }
     ]
   },
@@ -757,6 +780,7 @@
           "netherPortalType": "covered"
         },
         "description": [
+          "A strange, relatively dry forested area in the middle of Loop River Island, surrounded by the vast Loop River Wetlands."
         ],
         "photos": ["dry_spot_base.png"]
       }
@@ -790,7 +814,7 @@
       },
       {
         "id": 34,
-        "name": "Scatterbrain Village",
+        "name": "Horse Lamp Village",
         "type": "Village",
         "baseStructureType": "None",
         "biomes": [ "Plains", "River", "Flower Forest"],
@@ -805,8 +829,9 @@
           "netherPortalType": "none"
         },
         "description": [
+          "The inhabitants of thie village have put a horse on top of a lamppost. Strange."
         ],
-        "photos": ["scatterbrain_village.png"]
+        "photos": ["horse_lamp_village_1.png", "horse_lamp_village_2.png"]
       }
     ]
   }
