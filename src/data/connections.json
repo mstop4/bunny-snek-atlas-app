@@ -16,7 +16,7 @@
     "types": [ "water", "nether" ]
   },
   {
-    "ids": [ 2, 6 ],
+    "ids": [ 2, 35 ],
     "types": [ "nether" ]
   },
   {
@@ -237,7 +237,7 @@
   },
   {
     "ids": [30, 31],
-    "types": ["water", "nether"]
+    "types": ["water"]
   },
   {
     "ids": [7, 30],
@@ -258,5 +258,33 @@
   {
     "ids": [30, 32],
     "types": ["water"]
+  },
+  {
+    "ids": [30, 33],
+    "types": ["water", "nether"]
+  },
+  {
+    "ids": [31, 33],
+    "types": ["land", "water", "nether"]
+  },
+  {
+    "ids": [6, 33],
+    "types": ["nether"]
+  },
+  {
+    "ids": [31, 34],
+    "types": ["land", "water"]
+  },
+  {
+    "ids": [32, 34],
+    "types": ["water"]
+  },
+  {
+    "ids": [35, 6],
+    "types": ["land", "nether"]
+  },
+  {
+    "ids": [35, 8],
+    "types": ["water", "land"]
   }
 ]

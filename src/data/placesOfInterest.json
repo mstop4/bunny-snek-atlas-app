@@ -58,7 +58,7 @@
         "location": { "x": -789, "y": 69, "z": 72 },
         "raidCount": 0,
         "netherPortalDetails": {
-          "netherLocation": ["Lower Breenburn"],
+          "netherLocation": ["Lower Greenburn"],
           "overworldPortalType": "covered",
           "netherPortalType": "covered"
         },
@@ -185,6 +185,29 @@
           "It was intially a village that started to generate in 1.17, but was never finished due to the changes in world generation in 1.19."
         ],
         "photos": ["cut_hamlet.png"]
+      },
+      {
+        "id": 35,
+        "name": "Eastern Frontier Temple",
+        "type": "Ocean Monument",
+        "baseStructureType": "None",
+        "biomes": [ "Deep Cold Ocean" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 203, "y": 40, "z": -441 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": ["Respite Tunnel"],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "This temple was discovered long ago, but no one has the means of exploring and conquering it.",
+          "One day, a brave adventurer gathered the required gear and resources from Bunflower Village, Turtle-Beaver Resevoir, and Struggle Village to explore the inside of the temple. He had slain the Elder Guardians and was victorious, however he could not escape the temple in time and drowned.",
+          "There is current a plan to drain the interior of the temple and establish a base."
+        ],
+        "photos": ["eastern_frontier_temple_1.png"]
       }
     ]
   },
@@ -715,6 +738,58 @@
         "photos": ["hoverblock_village_1.png", "hoverblock_village_2.png"]
       },
       {
+        "id": 32,
+        "name": "Village of Boreal Bounty",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Taiga" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 2345, "y": 65, "z": -1005 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A small, but prosperous village. Its offered much resources when it was discovered."
+        ],
+        "photos": ["village_of_boreal_bounty.png"]
+      }
+    ]
+  },
+  {
+    "regionName": "Loop River Wetlands",
+    "places": [
+      {
+        "id": 33,
+        "name": "Dry Spot",
+        "type": "Base",
+        "baseStructureType": "Natural Cave",
+        "biomes": [ "Forest", "Swamp"],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 1586, "y": 61, "z": -830 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "A strange, relatively dry forested area in the middle of Loop River Island, surrounded by the vast Loop River Wetlands."
+        ],
+        "photos": ["dry_spot_base.png"]
+      }
+    ]
+  },
+  {
+    "regionName": "Bunflower Domain",
+    "places": [
+      {
         "id": 31,
         "name": "Bunflower Village",
         "type": "Village",
@@ -738,15 +813,15 @@
         "photos": ["bunflower_village.png"]
       },
       {
-        "id": 32,
-        "name": "Village of Boreal Bounty",
+        "id": 34,
+        "name": "Horse Lamp Village",
         "type": "Village",
         "baseStructureType": "None",
-        "biomes": [ "Taiga" ],
+        "biomes": [ "Plains", "River", "Flower Forest"],
         "mineralSources": [],
         "lavaSource": false,
         "rating": 0,
-        "location": { "x": 2345, "y": 65, "z": -1005 },
+        "location": { "x": 2373, "y": 68, "z": -1509 },
         "raidCount": 0,
         "netherPortalDetails": {
           "netherLocation": [],
@@ -754,9 +829,9 @@
           "netherPortalType": "none"
         },
         "description": [
-          "A small, but prosperous village. Its offered much resources when it was discovered."
+          "The inhabitants of thie village have put a horse on top of a lamppost. Strange."
         ],
-        "photos": []
+        "photos": ["horse_lamp_village_1.png", "horse_lamp_village_2.png"]
       }
     ]
   }
