@@ -194,20 +194,20 @@
         "biomes": [ "Deep Cold Ocean" ],
         "mineralSources": [],
         "lavaSource": false,
-        "rating": 0,
+        "rating": 1,
         "location": { "x": 203, "y": 40, "z": -441 },
-        "raidCount": 0,
+        "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": [],
-          "overworldPortalType": "none",
-          "netherPortalType": "none"
+          "netherLocation": ["Respite Tunnel"],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
         },
         "description": [
           "This temple was discovered long ago, but no one has the means of exploring and conquering it.",
           "One day, a brave adventurer gathered the required gear and resources from Bunflower Village, Turtle-Beaver Resevoir, and Struggle Village to explore the inside of the temple. He had slain the Elder Guardians and was victorious, however he could not escape the temple in time and drowned.",
           "There is current a plan to drain the interior of the temple and establish a base."
         ],
-        "photos": []
+        "photos": ["eastern_frontier_temple_1.png"]
       }
     ]
   },
