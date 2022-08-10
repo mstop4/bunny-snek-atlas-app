@@ -1,7 +1,6 @@
 import './Map.css';
-import mapImage from '../img/map.png';
-import regionBordersSVG from '../img/regionBorders/regions.svg';
 import settings from '../data/settings.json';
+import regionBordersSVG from '../img/regionBorders/regions.svg';
 import { findCoordinates } from '../data/dataUtils';
 import { useRef, useState } from 'react';
 import { calculateCoords, calculateConnectionCoords } from './Map_Utils';
@@ -48,6 +47,7 @@ const Map = (props) => {
   const [mapDimensions, setMapDimensions] = useState({ x: 0, y: 0 });
   const mapElem = useRef(null);
   const regionBordersElem = useRef(null);
+  const { mapBaseUrl } = settings;
  
   const onMapImgLoad = () => {
     const mapElemRect = mapElem.current.getBoundingClientRect();
@@ -119,12 +119,13 @@ const Map = (props) => {
   const mapMarkers = createMapMarkers();
   const netherConnections = createMapConnections();
 
+
   return (
     <div
       className="Map-container"
     >
       <img
-        src={mapImage}
+        src={`${mapBaseUrl}map.png`}
         alt="Map of Bunny Snek"
         ref={mapElem}
         onLoad={onMapImgLoad}

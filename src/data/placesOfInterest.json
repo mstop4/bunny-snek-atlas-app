@@ -190,7 +190,7 @@
         "id": 35,
         "name": "Eastern Frontier Temple",
         "type": "Ocean Monument",
-        "baseStructureType": "None",
+        "baseStructureType": "Base",
         "biomes": [ "Deep Cold Ocean" ],
         "mineralSources": [],
         "lavaSource": false,
@@ -207,7 +207,7 @@
           "One day, a brave adventurer gathered the required gear and resources from Bunflower Village, Turtle-Beaver Resevoir, and Struggle Village to explore the inside of the temple. He had slain the Elder Guardians and was victorious, however he could not escape the temple in time and drowned.",
           "There is current a plan to drain the interior of the temple and establish a base."
         ],
-        "photos": ["eastern_frontier_temple_1.png"]
+        "photos": ["eastern_frontier_temple_1.png", "eastern_frontier_temple_2.png"]
       }
     ]
   },

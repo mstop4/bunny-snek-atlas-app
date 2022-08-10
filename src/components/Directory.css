@@ -46,3 +46,15 @@
 .Directory-typeIcon {
   margin-left: 0.35rem;
 }
+
+.Directory-type_abandoned {
+  color: #ffa0b0;
+}
+
+.Directory-type_unsettled {
+  color: #90b0ff;
+}
+
+.Directory-type_settled {
+  color: white;
+}

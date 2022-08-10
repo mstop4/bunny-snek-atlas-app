@@ -7,5 +7,6 @@
   },
 
   "photosBaseUrl": "https://bunny-snek-atlas-app.s3.ca-central-1.amazonaws.com/photos/",
-  "thumbnailsBaseUrl": "https://bunny-snek-atlas-app.s3.ca-central-1.amazonaws.com/thumbnails/"
+  "thumbnailsBaseUrl": "https://bunny-snek-atlas-app.s3.ca-central-1.amazonaws.com/thumbnails/",
+  "mapBaseUrl": "https://bunny-snek-atlas-app.s3.ca-central-1.amazonaws.com/maps/"
 }

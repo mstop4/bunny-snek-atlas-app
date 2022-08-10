@@ -1,4 +1,4 @@
-import { faBuilding, faBuildingCircleExclamation, faBuildingCircleXmark, faHouse, faHouseCircleExclamation, faHouseCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBuilding, faHouse, faPlaceOfWorship, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Directory.css';
 
@@ -8,21 +8,36 @@ const RegionSection = (props) => {
 
   for (const place of region.places) {
     const { rating, type } = place;
-    let icon;
+    let iconType;
+    let title;
+    let classes = 'Directory-typeIcon';
+
+    if (type.includes('Village')) {
+      iconType = faBuilding;
+      title = 'Village';
+    } else if (type.includes('Ocean Monument')) {
+      iconType = faPlaceOfWorship;
+      title = 'Ocean Monument';
+    } else if (type.includes('Base')) {
+      iconType = faHouse;
+      title = 'Base';
+    } else {
+      iconType = faCircleQuestion;
+      title = 'Unknown';
+    }
 
     if (rating === -1) {
-      icon = type === 'Village'
-        ? <FontAwesomeIcon icon={faBuildingCircleXmark} className="Directory-typeIcon" title="Abandoned Village"/>
-        : <FontAwesomeIcon icon={faHouseCircleXmark} className="Directory-typeIcon" title="Abandoned Base"/>
+      title = `Abandoned ${title}`;
+      classes += ' Directory-type_abandoned';
     } else if (rating === 0) {
-      icon = type === 'Village'
-        ? <FontAwesomeIcon icon={faBuildingCircleExclamation} className="Directory-typeIcon" title="Unsettled Village"/>
-        : <FontAwesomeIcon icon={faHouseCircleExclamation} className="Directory-typeIcon" title="Unsettled Base"/>
+      title = `Unsettled ${title}`;
+      classes += ' Directory-type_unsettled';
     } else {
-      icon = type === 'Village'
-        ? <FontAwesomeIcon icon={faBuilding} className="Directory-typeIcon" title="Settled Village"/>
-        : <FontAwesomeIcon icon={faHouse} className="Directory-typeIcon" title="Settled Base"/>
+      title = `Settled ${title}`;
+      classes += ' Directory-type_settled';
     }
+    
+    const icon = <FontAwesomeIcon icon={iconType} className={classes} title={title}/>
 
     placesList.push(
       <li key={place.name}>

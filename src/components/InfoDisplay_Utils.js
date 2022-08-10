@@ -1,4 +1,15 @@
-import { faBuilding, faBuildingCircleExclamation, faBuildingCircleXmark, faFire, faHouse, faHouseCircleExclamation, faHouseCircleXmark, faQuestion, faRoad, faStar, faTrain, faWater } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBuilding,
+  faHouse,
+  faPlaceOfWorship,
+  faCircleQuestion,
+  faFire,
+  faQuestion,
+  faRoad,
+  faStar,
+  faTrain,
+  faWater,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { cloneElement } from "react";
 
@@ -88,37 +99,42 @@ export const findConnections = (connectionsData, placeData, placeName, onPlaceSe
 }
 
 export const parseType = (type, rating, baseStructureType) => {
-  if (rating === -1) {
-    return (
-      <>
-        {type === 'Village'
-          ? <FontAwesomeIcon key="abandonedVillage" icon={faBuildingCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Village"/>
-          : <FontAwesomeIcon key="abandonedBase" icon={faHouseCircleXmark} className="InfoDisplay-typeIcon" title="Abandoned Base"/>
-        }
-        {`Abandoned ${type}`}
-      </>
-    );
-  } else if (rating === 0) {
-    return (
-      <>
-        {type === 'Village'
-          ? <FontAwesomeIcon key="unsettledVillage" icon={faBuildingCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Village"/>
-          : <FontAwesomeIcon key="unsettledBase" icon={faHouseCircleExclamation} className="InfoDisplay-typeIcon" title="Unsettled Base"/>
-        }
-        {`Unsettled ${type}`}
-      </>
-    );
+  let iconType;
+  let title;
+  let classes = 'InfoDisplay-typeIcon';
+
+  if (type.includes('Village')) {
+    iconType = faBuilding;
+    title = 'Village';
+  } else if (type.includes('Ocean Monument')) {
+    iconType = faPlaceOfWorship;
+    title = 'Ocean Monument';
+  } else if (type.includes('Base')) {
+    iconType = faHouse;
+    title = 'Base';
   } else {
-    return (
-      <>
-        {type === 'Village'
-          ? <FontAwesomeIcon key="settledVillage" icon={faBuilding} className="InfoDisplay-typeIcon" title="Settled Village"/>
-          : <FontAwesomeIcon key="settledBase" icon={faHouse} className="InfoDisplay-typeIcon" title="Settled Base"/>
-        }
-        {`${type}: ${baseStructureType}`}
-      </>
-    );
+    iconType = faCircleQuestion;
+    title = 'Unknown';
   }
+
+  if (rating === -1) {
+    title = `Abandoned ${title}`;
+    classes += ' Directory-type_abandoned';
+  } else if (rating === 0) {
+    title = `Unsettled ${title}`;
+    classes += ' Directory-type_unsettled';
+  } else {
+    title = `${type}: ${baseStructureType}`;
+    classes += ' Directory-type_settled';
+  }
+  
+  const icon = <FontAwesomeIcon icon={iconType} className={classes} title={title}/>
+  return (
+    <>
+      {icon}
+      {title}
+    </>
+  );
 }
 
 export const parseBiomes = (biomes) => {
