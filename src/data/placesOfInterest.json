@@ -128,7 +128,7 @@
         "biomes": [ "Plains", "Dark Forest" ],
         "mineralSources": ["No Respite Cave"],
         "lavaSource": false,
-        "rating": 3,
+        "rating": 4,
         "location": { "x": 42, "y": 69, "z": -975 },
         "raidCount": -1,
         "netherPortalDetails": {
@@ -185,34 +185,11 @@
           "It was intially a village that started to generate in 1.17, but was never finished due to the changes in world generation in 1.19."
         ],
         "photos": ["cut_hamlet.png"]
-      },
-      {
-        "id": 35,
-        "name": "Eastern Frontier Temple",
-        "type": "Ocean Monument",
-        "baseStructureType": "Base",
-        "biomes": [ "Deep Cold Ocean" ],
-        "mineralSources": [],
-        "lavaSource": false,
-        "rating": 1,
-        "location": { "x": 203, "y": 40, "z": -441 },
-        "raidCount": -1,
-        "netherPortalDetails": {
-          "netherLocation": ["Respite Tunnel"],
-          "overworldPortalType": "covered",
-          "netherPortalType": "covered"
-        },
-        "description": [
-          "This temple was discovered long ago, but no one has the means of exploring and conquering it.",
-          "One day, a brave adventurer gathered the required gear and resources from Bunflower Village, Turtle-Beaver Resevoir, and Struggle Village to explore the inside of the temple. He had slain the Elder Guardians and was victorious, however he could not escape the temple in time and drowned.",
-          "There is current a plan to drain the interior of the temple and establish a base."
-        ],
-        "photos": ["eastern_frontier_temple_1.png", "eastern_frontier_temple_2.png"]
       }
     ]
   },
   {
-    "regionName": "Spawn Area",
+    "regionName": "Spawn Archipelago",
     "places": [
       {
         "id": 8,
@@ -234,6 +211,29 @@
           "Formerly a simple dirt marker located at Bunny Snek's origin, now it's the start of a livable base. Replaces the original plan to establish a base at Spawn Point. There are plans to build a tower that extends to the world's build limit in the sky and deep underground."
         ],
         "photos": ["world_origin.png"]
+      },
+      {
+        "id": 35,
+        "name": "Eastern Frontier Temple",
+        "type": "Ocean Monument",
+        "baseStructureType": "Base",
+        "biomes": [ "Deep Cold Ocean" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 2,
+        "location": { "x": 203, "y": 40, "z": -441 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": ["Shores of No Respite"],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "Located on the border of Fox Forest Area and Spawn Archipelago, this temple was discovered long ago, but no one has the means of exploring and conquering it.",
+          "One day, a brave adventurer gathered the required gear and resources from Bunflower Village, Turtle-Beaver Resevoir, and Struggle Village to explore the inside of the temple. He had slain the Elder Guardians and was victorious, however he could not escape the temple in time and drowned.",
+          "The interior of the temple was drained and a base was established within. Nights spent inside the temple base are serenaded by the sounds of the Guardians outside."
+        ],
+        "photos": ["eastern_frontier_temple_1.png", "eastern_frontier_temple_2.png"]
       }
     ]
   },
