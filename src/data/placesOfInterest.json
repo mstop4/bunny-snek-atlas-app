@@ -757,6 +757,27 @@
           "A small, but prosperous village. Its offered much resources when it was discovered."
         ],
         "photos": ["village_of_boreal_bounty.png"]
+      },
+      {
+        "id": 36,
+        "name": "Dogtrio Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Taiga", "River" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 2357, "y": 70, "z": 196 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A village discovered during the survey to find the eastern coast of Canine Basalt Domain, Ring Rivers, and Para-Arch Area."
+        ],
+        "photos": []
       }
     ]
   },

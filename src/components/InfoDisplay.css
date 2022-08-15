@@ -28,6 +28,10 @@
   margin: 0;
 }
 
+.InfoDisplay-idNumber {
+  color: grey;
+}
+
 .InfoDisplay-summary {
   padding: 0;
   display: flex;

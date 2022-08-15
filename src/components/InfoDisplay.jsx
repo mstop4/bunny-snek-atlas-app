@@ -63,6 +63,7 @@ const InfoDisplay = (props) => {
     description,
     location,
     name,
+    id,
     raidCount,
     rating,
     type,
@@ -85,7 +86,7 @@ const InfoDisplay = (props) => {
   return (
     <div className="InfoDisplay-outerContainer">
       <header>
-        <h1 className="InfoDisplay-title">{name}</h1>
+        <h1 className="InfoDisplay-title"><span className="InfoDisplay-idNumber">{id}</span> {name}</h1>
       </header>
       <main>
         <section className="InfoDisplay-summary">
