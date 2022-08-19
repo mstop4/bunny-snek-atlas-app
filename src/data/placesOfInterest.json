@@ -855,5 +855,9 @@
         "photos": ["horse_lamp_village_1.png", "horse_lamp_village_2.png"]
       }
     ]
+  },
+  {
+    "regionName": "Stone Watcher Jungle",
+    "places": []
   }
 ]
