@@ -286,5 +286,13 @@
   {
     "ids": [35, 8],
     "types": ["water", "land"]
+  },
+  {
+    "ids": [32, 37],
+    "types": ["water"]
+  },
+  {
+    "ids": [38, 37],
+    "types": ["water", "land"]
   }
 ]

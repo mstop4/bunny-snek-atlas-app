@@ -745,7 +745,7 @@
         "biomes": [ "Taiga" ],
         "mineralSources": [],
         "lavaSource": false,
-        "rating": 0,
+        "rating": 1,
         "location": { "x": 2345, "y": 65, "z": -1005 },
         "raidCount": 0,
         "netherPortalDetails": {
@@ -754,9 +754,9 @@
           "netherPortalType": "none"
         },
         "description": [
-          "A small, but prosperous village. Its offered much resources when it was discovered."
+          "A small, but prosperous village. Its offered much resources when it was discovered. It is the gateway to Migratory Area, the last stop before the Bounty-Resurrection Canal."
         ],
-        "photos": ["village_of_boreal_bounty.png"]
+        "photos": ["village_of_boreal_bounty_1.png", "village_of_boreal_bounty_2.png"]
       },
       {
         "id": 36,
@@ -818,9 +818,9 @@
         "biomes": [ "Sunflower Plains", "Flower Forest", "River", "Plains"],
         "mineralSources": ["Bunflower Caverns"],
         "lavaSource": false,
-        "rating": 2,
+        "rating": 3,
         "location": { "x": 1782, "y": 66, "z": -1372 },
-        "raidCount": 0,
+        "raidCount": 1,
         "netherPortalDetails": {
           "netherLocation": ["Canine Basalt Delta", "Great Respite-Bunflower Tunnel", "Magma Cube's Leap"],
           "overworldPortalType": "fenced",
@@ -859,5 +859,53 @@
   {
     "regionName": "Stone Watcher Jungle",
     "places": []
+  },
+  {
+    "regionName": "Migratory Area",
+    "places": [
+      {
+        "id": 37,
+        "name": "Resurrection Village",
+        "type": "Village",
+        "baseStructureType": "Artificial Cave",
+        "biomes": [ "Plains" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 3372, "y": 76, "z": -949 },
+        "raidCount": 1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "Some internal strife had split the people of village in two factions. Those still loyal to the village stayed in the lowlands while those who became Pillagers reside on the highlands.",
+          "One fateful day, the Pillagers launched raid on the village. Although they fought valiantly, the villagers of the lowlands were all killed. Three representatives, two from Donator Village and one from the Village of Boreal Bounty, took the long journey to reclaim the village. Although one had fallen into the large cave system below the village, the remaining two managed to get settled. Only time will tell if the village will prosper once more."
+        ],
+        "photos": []
+      },
+      {
+        "id": 38,
+        "name": "Donator Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Sunflower Plains" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 3452, "y": 75, "z": -1468 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A village discovered when trying to find a water route from Resurrection Village to Horse Lamp Village. Horse Lamp Village was meant to send someone to help reclaim Resurrection Village, but Dontaor Village decided to sned someone instead."
+        ],
+        "photos": []
+      }
+    ]
   }
 ]
