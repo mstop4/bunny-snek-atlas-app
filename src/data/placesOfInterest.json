@@ -777,7 +777,7 @@
         "description": [
           "A village discovered during the survey to find the eastern coast of Canine Basalt Domain, Ring Rivers, and Para-Arch Area."
         ],
-        "photos": []
+        "photos": ["dogtrio_village_1.png", "dogtrio_village_2.png"]
       }
     ]
   },
@@ -869,21 +869,21 @@
         "type": "Village",
         "baseStructureType": "Artificial Cave",
         "biomes": [ "Plains" ],
-        "mineralSources": [],
+        "mineralSources": ["Resurrection Cave"],
         "lavaSource": false,
-        "rating": 1,
+        "rating": 2,
         "location": { "x": 3372, "y": 76, "z": -949 },
         "raidCount": 1,
         "netherPortalDetails": {
-          "netherLocation": [],
-          "overworldPortalType": "none",
-          "netherPortalType": "none"
+          "netherLocation": ["Canine Basalt Delta"],
+          "overworldPortalType": "fenced",
+          "netherPortalType": "exposed"
         },
         "description": [
           "Some internal strife had split the people of village in two factions. Those still loyal to the village stayed in the lowlands while those who became Pillagers reside on the highlands.",
-          "One fateful day, the Pillagers launched raid on the village. Although they fought valiantly, the villagers of the lowlands were all killed. Three representatives, two from Donator Village and one from the Village of Boreal Bounty, took the long journey to reclaim the village. Although one had fallen into the large cave system below the village, the remaining two managed to get settled. Only time will tell if the village will prosper once more."
+          "One fateful day, the Pillagers launched raid on the village. Although they fought valiantly, the villagers of the lowlands were all killed. Three representatives, two from Donator Village and one from the Village of Boreal Bounty, took the long journey to reclaim the village. Although one had fallen into the large cave system below the village, the remaining two managed to get settled. The population has stabilized, but only time will tell if the village will prosper once more."
         ],
-        "photos": []
+        "photos": ["resurrection_village.png"]
       },
       {
         "id": 38,
@@ -904,7 +904,7 @@
         "description": [
           "A village discovered when trying to find a water route from Resurrection Village to Horse Lamp Village. Horse Lamp Village was meant to send someone to help reclaim Resurrection Village, but Dontaor Village decided to sned someone instead."
         ],
-        "photos": []
+        "photos": ["donator_village.png"]
       }
     ]
   }
