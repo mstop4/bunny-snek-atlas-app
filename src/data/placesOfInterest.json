@@ -877,7 +877,7 @@
         "netherPortalDetails": {
           "netherLocation": ["Canine Basalt Delta"],
           "overworldPortalType": "fenced",
-          "netherPortalType": "exposed"
+          "netherPortalType": "covered"
         },
         "description": [
           "Some internal strife had split the people of village in two factions. Those still loyal to the village stayed in the lowlands while those who became Pillagers reside on the highlands.",
@@ -905,6 +905,73 @@
           "A village discovered when trying to find a water route from Resurrection Village to Horse Lamp Village. Horse Lamp Village was meant to send someone to help reclaim Resurrection Village, but Dontaor Village decided to sned someone instead."
         ],
         "photos": ["donator_village.png"]
+      }
+    ]
+  },
+  {
+    "regionName": "Stonecold Bay",
+    "places": [
+      {
+        "id": 39,
+        "name": "Port Cavity",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Plains", "Ocean", "Stony Shore" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 3291, "y": 62, "z": -1845 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+        ],
+        "photos": []
+      },
+      {
+        "id": 40,
+        "name": "Unnamed Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Plains", "River" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 2901, "y": 62, "z": -1931 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+         
+        ],
+        "photos": []
+      },
+      {
+        "id": 41,
+        "name": "Mount Snowcone",
+        "type": "Base",
+        "baseStructureType": "Artificial Cave",
+        "biomes": [ "Sonwy Slopes" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 3843, "y": 120, "z": -1954 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A base established after someone sunk under powdred snow."
+        ],
+        "photos": []
       }
     ]
   }
