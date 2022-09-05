@@ -858,7 +858,29 @@
   },
   {
     "regionName": "Stone Watcher Jungle",
-    "places": []
+    "places": [
+      {
+        "id": 42,
+        "name": "Nostalgia Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Forest", "Plains", "River" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": -1,
+        "location": { "x": 2380, "y": 63, "z": -1996 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+         
+        ],
+        "photos": []
+      }
+    ]
   },
   {
     "regionName": "Migratory Area",
@@ -871,7 +893,7 @@
         "biomes": [ "Plains" ],
         "mineralSources": ["Resurrection Cave"],
         "lavaSource": false,
-        "rating": 2,
+        "rating": 3,
         "location": { "x": 3372, "y": 76, "z": -949 },
         "raidCount": 1,
         "netherPortalDetails": {
@@ -881,7 +903,8 @@
         },
         "description": [
           "Some internal strife had split the people of village in two factions. Those still loyal to the village stayed in the lowlands while those who became Pillagers reside on the highlands.",
-          "One fateful day, the Pillagers launched raid on the village. Although they fought valiantly, the villagers of the lowlands were all killed. Three representatives, two from Donator Village and one from the Village of Boreal Bounty, took the long journey to reclaim the village. Although one had fallen into the large cave system below the village, the remaining two managed to get settled. The population has stabilized, but only time will tell if the village will prosper once more."
+          "One fateful day, the Pillagers launched raid on the village. Although they fought valiantly, the villagers of the lowlands were all killed. Three representatives, two from Donator Village and one from the Village of Boreal Bounty, took the long journey to reclaim the village. Although one had fallen into the large cave system below the village, the remaining two managed to get settled. The population has stabilized, and the village has begun to propser.",
+          "The current problem at hand is finding a safe route through the Canine Basalt Delta to connect the Nether portal in the village to one of the portals to the west."
         ],
         "photos": ["resurrection_village.png"]
       },
