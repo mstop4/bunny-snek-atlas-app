@@ -876,7 +876,7 @@
           "netherPortalType": "none"
         },
         "description": [
-         
+          "Even in death, the former inhabitants of this village did not want to leave their homes."
         ],
         "photos": []
       }
@@ -891,13 +891,13 @@
         "type": "Village",
         "baseStructureType": "Artificial Cave",
         "biomes": [ "Plains" ],
-        "mineralSources": ["Resurrection Cave"],
+        "mineralSources": ["Lost Cat Cave", "Lost Cat Mines"],
         "lavaSource": false,
-        "rating": 3,
+        "rating": 4,
         "location": { "x": 3372, "y": 76, "z": -949 },
         "raidCount": 1,
         "netherPortalDetails": {
-          "netherLocation": ["Canine Basalt Delta"],
+          "netherLocation": ["Canine Basalt Delta East"],
           "overworldPortalType": "fenced",
           "netherPortalType": "covered"
         },
@@ -928,6 +928,27 @@
           "A village discovered when trying to find a water route from Resurrection Village to Horse Lamp Village. Horse Lamp Village was meant to send someone to help reclaim Resurrection Village, but Dontaor Village decided to sned someone instead."
         ],
         "photos": ["donator_village.png"]
+      },
+      {
+        "id": 43,
+        "name": "Ritual Burn Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "River", "Taiga" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 3636, "y": 64, "z": -293 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "The people here have placed campfires all over their village. Those who have lived their lives here know the lay of the land likethe back of their hand, so they can easily discern outsiders by seeing who caught on fire."
+        ],
+        "photos": []
       }
     ]
   },
@@ -980,7 +1001,7 @@
         "name": "Mount Snowcone",
         "type": "Base",
         "baseStructureType": "Artificial Cave",
-        "biomes": [ "Sonwy Slopes" ],
+        "biomes": [ "Snowy Slopes" ],
         "mineralSources": [],
         "lavaSource": false,
         "rating": 1,
@@ -992,7 +1013,7 @@
           "netherPortalType": "none"
         },
         "description": [
-          "A base established after someone sunk under powdred snow."
+          "A base established after someone sunk under powdered snow."
         ],
         "photos": []
       }
