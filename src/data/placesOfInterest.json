@@ -1060,9 +1060,9 @@
         "location": { "x": 2843, "y": 73, "z": 1835 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": ["Unnamed Area"],
+          "netherLocation": ["Angry Boar Run"],
           "overworldPortalType": "fenced",
-          "netherPortalType": "exposed"
+          "netherPortalType": "fenced"
         },
         "description": [
           "A village surrounded by beautiful scenery on all sides: rivers, sunflowers, the sea, and caves. So long have the people been mesmerized by the surroundings, that they've forgot to develop the village. Many of those who didn't have a role to play did not survive in the long run."
