@@ -633,6 +633,27 @@
           "This base was established to study the strange, clashing biomes in the Shattered Lands."
         ],
         "photos": ["shattered_lands_base.png"]
+      },
+      {
+        "id": 45,
+        "name": "Shattered Village Ruins",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Taiga", "Birch Forest" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": -1,
+        "location": { "x": 1848, "y": 62, "z": 2262 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A mysterious crossroad found in the middle of nowhere. Is this all that remains of a once great city, destroyed by whatever caused the chaos that is the Shattered Lands?"
+        ],
+        "photos": []
       }
     ]
   },
@@ -736,48 +757,6 @@
           "Finding a safe path through the delta northward to Bunflower Village had proven to be even more dangerous, due to the extreme terrain. After many struggles, the Underdog Tunnel was built connecting to the Great Respite-Bunflower Tunnel, finally allowing quick passage between the two settlements."
         ],
         "photos": ["hoverblock_village_1.png", "hoverblock_village_2.png"]
-      },
-      {
-        "id": 32,
-        "name": "Village of Boreal Bounty",
-        "type": "Village",
-        "baseStructureType": "None",
-        "biomes": [ "Taiga" ],
-        "mineralSources": [],
-        "lavaSource": false,
-        "rating": 1,
-        "location": { "x": 2345, "y": 65, "z": -1005 },
-        "raidCount": 0,
-        "netherPortalDetails": {
-          "netherLocation": [],
-          "overworldPortalType": "none",
-          "netherPortalType": "none"
-        },
-        "description": [
-          "A small, but prosperous village. Its offered much resources when it was discovered. It is the gateway to Migratory Area, the last stop before the Bounty-Resurrection Canal."
-        ],
-        "photos": ["village_of_boreal_bounty_1.png", "village_of_boreal_bounty_2.png"]
-      },
-      {
-        "id": 36,
-        "name": "Dogtrio Village",
-        "type": "Village",
-        "baseStructureType": "None",
-        "biomes": [ "Taiga", "River" ],
-        "mineralSources": [],
-        "lavaSource": false,
-        "rating": 0,
-        "location": { "x": 2357, "y": 70, "z": 196 },
-        "raidCount": 0,
-        "netherPortalDetails": {
-          "netherLocation": [],
-          "overworldPortalType": "none",
-          "netherPortalType": "none"
-        },
-        "description": [
-          "A village discovered during the survey to find the eastern coast of Canine Basalt Domain, Ring Rivers, and Para-Arch Area."
-        ],
-        "photos": ["dogtrio_village_1.png", "dogtrio_village_2.png"]
       }
     ]
   },
@@ -892,7 +871,7 @@
         "baseStructureType": "Artificial Cave",
         "biomes": [ "Plains" ],
         "mineralSources": ["Lost Cat Cave", "Lost Cat Mines"],
-        "lavaSource": false,
+        "lavaSource": true,
         "rating": 4,
         "location": { "x": 3372, "y": 76, "z": -949 },
         "raidCount": 1,
@@ -928,27 +907,6 @@
           "A village discovered when trying to find a water route from Resurrection Village to Horse Lamp Village. Horse Lamp Village was meant to send someone to help reclaim Resurrection Village, but Dontaor Village decided to sned someone instead."
         ],
         "photos": ["donator_village.png"]
-      },
-      {
-        "id": 43,
-        "name": "Ritual Burn Village",
-        "type": "Village",
-        "baseStructureType": "None",
-        "biomes": [ "River", "Taiga" ],
-        "mineralSources": [],
-        "lavaSource": false,
-        "rating": 0,
-        "location": { "x": 3636, "y": 64, "z": -293 },
-        "raidCount": -1,
-        "netherPortalDetails": {
-          "netherLocation": [],
-          "overworldPortalType": "none",
-          "netherPortalType": "none"
-        },
-        "description": [
-          "The people here have placed campfires all over their village. Those who have lived their lives here know the lay of the land likethe back of their hand, so they can easily discern outsiders by seeing who caught on fire."
-        ],
-        "photos": []
       }
     ]
   },
@@ -1008,12 +966,106 @@
         "location": { "x": 3843, "y": 120, "z": -1954 },
         "raidCount": -1,
         "netherPortalDetails": {
+          "netherLocation": ["Cold Souls Valley"],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "A base established after someone sunk under powdered snow. Provides a connection to Cold Souls Valley in the Nether."
+        ],
+        "photos": []
+      }
+    ]
+  },
+  {
+    "regionName": "Boreal Maze",
+    "places": [
+      {
+        "id": 32,
+        "name": "Village of Boreal Bounty",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Taiga" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 2,
+        "location": { "x": 2345, "y": 65, "z": -1005 },
+        "raidCount": 0,
+        "netherPortalDetails": {
           "netherLocation": [],
           "overworldPortalType": "none",
           "netherPortalType": "none"
         },
         "description": [
-          "A base established after someone sunk under powdered snow."
+          "A small, but prosperous village. Its offered much resources when it was discovered. It is the gateway to Migratory Area, the last stop before the Bounty-Resurrection Canal."
+        ],
+        "photos": ["village_of_boreal_bounty_1.png", "village_of_boreal_bounty_2.png"]
+      },
+      {
+        "id": 36,
+        "name": "Dogtrio Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Taiga", "River" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 2357, "y": 70, "z": 196 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A village discovered during the survey to find the eastern coast of Canine Basalt Domain, Ring Rivers, and Para-Arch Area."
+        ],
+        "photos": ["dogtrio_village_1.png", "dogtrio_village_2.png"]
+      },
+      {
+        "id": 43,
+        "name": "Ritual Burn Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "River", "Taiga" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 3636, "y": 64, "z": -293 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "The people here have placed campfires all over their village. Those who have lived their lives here know the lay of the land likethe back of their hand, so they can easily discern outsiders by seeing who caught on fire."
+        ],
+        "photos": []
+      }
+    ]
+  },
+  {
+    "regionName": "Scenic Sea",
+    "places": [
+      {
+        "id": 44,
+        "name": "Scenic Village",
+        "type": "Village",
+        "baseStructureType": "Artificial Cave",
+        "biomes": [ "Sunflower Plains" ],
+        "mineralSources": ["Scenic Tunnel"],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 2843, "y": 73, "z": 1835 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": ["Unnamed Area"],
+          "overworldPortalType": "fenced",
+          "netherPortalType": "exposed"
+        },
+        "description": [
+          "A village surrounded by beautiful scenery on all sides: rivers, sunflowers, the sea, and caves. So long have the people been mesmerized by the surroundings, that they've forgot to develop the village. Many of those who didn't have a role to play did not survive in the long run."
         ],
         "photos": []
       }
