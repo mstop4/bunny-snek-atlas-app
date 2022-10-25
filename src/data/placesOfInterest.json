@@ -857,7 +857,7 @@
         "description": [
           "Even in death, the former inhabitants of this village did not want to leave their homes."
         ],
-        "photos": []
+        "photos": ["nostalgia_village.png"]
       }
     ]
   },
@@ -931,7 +931,7 @@
         },
         "description": [
         ],
-        "photos": []
+        "photos": ["port_cavity.png"]
       },
       {
         "id": 40,
@@ -952,7 +952,7 @@
         "description": [
          
         ],
-        "photos": []
+        "photos": ["unnamed_village.png"]
       },
       {
         "id": 41,
@@ -973,7 +973,7 @@
         "description": [
           "A base established after someone sunk under powdered snow. Provides a connection to Cold Souls Valley in the Nether."
         ],
-        "photos": []
+        "photos": ["mount_snowcone_2.png", "mount_snowcone_1.png"]
       }
     ]
   },
@@ -1041,7 +1041,7 @@
         "description": [
           "The people here have placed campfires all over their village. Those who have lived their lives here know the lay of the land likethe back of their hand, so they can easily discern outsiders by seeing who caught on fire."
         ],
-        "photos": []
+        "photos": ["ritual_burn_village.png"]
       }
     ]
   },
@@ -1056,7 +1056,7 @@
         "biomes": [ "Sunflower Plains" ],
         "mineralSources": ["Scenic Tunnel"],
         "lavaSource": false,
-        "rating": 1,
+        "rating": 3,
         "location": { "x": 2843, "y": 73, "z": 1835 },
         "raidCount": -1,
         "netherPortalDetails": {
@@ -1067,8 +1067,12 @@
         "description": [
           "A village surrounded by beautiful scenery on all sides: rivers, sunflowers, the sea, and caves. So long have the people been mesmerized by the surroundings, that they've forgot to develop the village. Many of those who didn't have a role to play did not survive in the long run."
         ],
-        "photos": []
+        "photos": ["scenic_village.png"]
       }
     ]
+  },
+  {
+    "regionName": "Pinball Ice Field",
+    "places": []
   }
 ]
