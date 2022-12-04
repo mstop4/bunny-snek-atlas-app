@@ -808,7 +808,8 @@
         "description": [
           "A beautiful village sandwiched between a river and a sea of flowers.",
           "The house base established in this village was hastily built, just so there could be a safe place to stay.",
-          "In the past, a path southward through the Canine Basalt Delta to Hoverblock Village had not been found, so the Great Respite-Bunflower Tunnel was constructed connecting the nether portal to Respite House instead. A special platform had to be constructed in order for the two portals on either side to connect properly. Magma Cubes and Ghasts kept assaulting the platform during construction. In the present, the Underdog Tunnel had been built connecting to the Great Respite-Bunflower Tunnel, finally allowing quick passage between Bunflower and Hoverblock Villages."
+          "In the past, a path southward through the Canine Basalt Delta to Hoverblock Village had not been found, so the Great Respite-Bunflower Tunnel was constructed connecting the nether portal to Respite House instead. A special platform had to be constructed in order for the two portals on either side to connect properly. Magma Cubes and Ghasts kept assaulting the platform during construction.", 
+          "In the present, the Underdog Tunnel was built connecting to the Great Respite-Bunflower Tunnel, finally allowing quick passage between Bunflower and Hoverblock Villages. In addition, the Overdog Tunnel allows travellers to navigate their way over the basalt delta to Resurrection Village."
         ],
         "photos": ["bunflower_village.png"]
       },
@@ -883,7 +884,9 @@
         "description": [
           "Some internal strife had split the people of village in two factions. Those still loyal to the village stayed in the lowlands while those who became Pillagers reside on the highlands.",
           "One fateful day, the Pillagers launched raid on the village. Although they fought valiantly, the villagers of the lowlands were all killed. Three representatives, two from Donator Village and one from the Village of Boreal Bounty, took the long journey to reclaim the village. Although one had fallen into the large cave system below the village, the remaining two managed to get settled. The population has stabilized, and the village has begun to propser.",
-          "The current problem at hand is finding a safe route through the Canine Basalt Delta to connect the Nether portal in the village to one of the portals to the west."
+          "This village spearheaded the construction of the Overdog Tunnel, a transportation network dug through the upper sections of Canine Basalt Delta in order to bypass it. It connects to Bunflower Village and Underdog Tunnel to the west and Mount Snowcone to the north.",
+          "It also innovated the use of slab flooring in Overdog Tunnel to prevent Magma Cubes from clogging it.",
+          "Resurrection Village was also the first to build a bubble column elevator for quick access to the bottom floors of Lost Cat Cave."
         ],
         "photos": ["resurrection_village.png"]
       },
@@ -962,7 +965,7 @@
         "biomes": [ "Snowy Slopes" ],
         "mineralSources": [],
         "lavaSource": false,
-        "rating": 1,
+        "rating": 2,
         "location": { "x": 3843, "y": 120, "z": -1954 },
         "raidCount": -1,
         "netherPortalDetails": {
@@ -971,7 +974,8 @@
           "netherPortalType": "covered"
         },
         "description": [
-          "A base established after someone sunk under powdered snow. Provides a connection to Cold Souls Valley in the Nether."
+          "A base established after someone sunk under powdered snow. Provides a connection to Cold Souls Valley in the Nether.",
+          "Cold Souls Valley is currently the exclusive supplier of soul sand in Bunny Snek, used in the production of bubble column elevators."
         ],
         "photos": ["mount_snowcone_2.png", "mount_snowcone_1.png"]
       }
@@ -984,7 +988,7 @@
         "id": 32,
         "name": "Village of Boreal Bounty",
         "type": "Village",
-        "baseStructureType": "None",
+        "baseStructureType": "House",
         "biomes": [ "Taiga" ],
         "mineralSources": [],
         "lavaSource": false,
@@ -1026,11 +1030,11 @@
         "id": 43,
         "name": "Ritual Burn Village",
         "type": "Village",
-        "baseStructureType": "None",
+        "baseStructureType": "House",
         "biomes": [ "River", "Taiga" ],
         "mineralSources": [],
         "lavaSource": false,
-        "rating": 1,
+        "rating": 2,
         "location": { "x": 3636, "y": 64, "z": -293 },
         "raidCount": -1,
         "netherPortalDetails": {
@@ -1042,6 +1046,28 @@
           "The people here have placed campfires all over their village. Those who have lived their lives here know the lay of the land likethe back of their hand, so they can easily discern outsiders by seeing who caught on fire."
         ],
         "photos": ["ritual_burn_village.png"]
+      },
+      {
+        "id": 46,
+        "name": "Garlic Kidney Mountain",
+        "type": "Base",
+        "baseStructureType": "House",
+        "biomes": [ "Birch Forest", "Meadow" ],
+        "mineralSources": ["Pig Column Hole"],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 3683, "y": 130, "z": 750 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "This base was established as a lookout point and a rest stop in the search for a passage nrothward from Scenic Village to Ritual Burn Village.",
+          "This base was to second to use a bubble column elevator."
+        ],
+        "photos": []
       }
     ]
   },
@@ -1074,5 +1100,31 @@
   {
     "regionName": "Pinball Ice Field",
     "places": []
+  },
+  {
+    "regionName": "Respite-Bunflower Seaway",
+    "places": [
+      {
+        "id": 47,
+        "name": "Lonely Temple",
+        "type": "Ocean Monument",
+        "baseStructureType": "Base",
+        "biomes": [ "Deep Ocean" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 681, "y": 52, "z": -1190 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": ["Great Respite-Bunflower Tunnel"],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "An ocean monument in the middle of the sea."
+        ],
+        "photos": []
+      }
+    ]
   }
 ]

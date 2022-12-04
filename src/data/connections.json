@@ -248,7 +248,11 @@
     "types": ["water"]
   },
   {
-    "ids": [6, 31],
+    "ids": [6, 47],
+    "types": ["water", "nether"]
+  },
+  {
+    "ids": [47, 31],
     "types": ["nether"]
   },
   {
@@ -322,5 +326,13 @@
   {
     "ids": [23, 44],
     "types": ["water", "nether"]
+  },
+  {
+    "ids": [44, 46],
+    "types": ["water"]
+  },
+  {
+    "ids": [43, 46],
+    "types": ["water"]
   }
 ]
