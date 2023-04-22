@@ -638,7 +638,7 @@
         "biomes": [ "Plains" ],
         "mineralSources": ["Bastion Crevasse"],
         "lavaSource": false,
-        "rating": 3,
+        "rating": 4,
         "location": { "x": 732, "y": 63, "z": 2657 },
         "raidCount": -1,
         "netherPortalDetails": {
@@ -647,7 +647,7 @@
           "netherPortalType": "semi-covered"
         },
         "description": [
-          "This base mainly serves as a connection between the Overworld and Angry Boar Bastion in the Nether."
+          "This base mainly serves as a connection between the Overworld and Angry Boar Bastion in the Nether. Strangely enough, the resources found in the crevasse and the bastion themselves have enriched this previosuly insignificant base."
         ],
         "photos": ["bastion_crevasse.png"]
       }
@@ -668,9 +668,9 @@
         "location": { "x": 1603, "y": 89, "z": 2172 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": ["Angry Boar Forest"],
+          "netherLocation": ["Angry Boar Run"],
           "overworldPortalType": "covered",
-          "netherPortalType": "exposed"
+          "netherPortalType": "covered"
         },
         "description": [
           "This base was established to study the strange, clashing biomes in the Shattered Lands."
@@ -1125,7 +1125,7 @@
         "biomes": [ "Sunflower Plains" ],
         "mineralSources": ["Scenic Tunnel"],
         "lavaSource": false,
-        "rating": 3,
+        "rating": 4,
         "location": { "x": 2843, "y": 73, "z": 1835 },
         "raidCount": -1,
         "netherPortalDetails": {
