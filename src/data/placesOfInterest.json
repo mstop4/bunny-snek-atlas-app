@@ -417,6 +417,49 @@
           "Shattered Village is surrounded by numerous natural landmarks, such as the Triple Spire Caverns, Stalactite Thicket Caverns and Crate Lake, and the Split Feelings Forest."
         ],
         "photos": ["shattered_village.png"]
+      },
+      {
+        "id": 55,
+        "name": "Grand Watcher Village",
+        "type": "Village",
+        "baseStructureType": "Stronghold",
+        "biomes": [ "Stronghold", "Caves", "Savanna" ],
+        "mineralSources": ["Grand Watcher Caverns"],
+        "lavaSource": false,
+        "rating": 2,
+        "location": { "x": -2040, "y": -17, "z": 1313 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "This village was built to protect the surface from the stronghold that lurks beneath. The grand watcher's house is built upon a natural tower, overlooking the rest of the village.",
+          "It is the gateway between the Overworld and The End of this world."
+        ],
+        "photos": []
+      },
+      {
+        "id": 56,
+        "name": "Open House Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Plains", "River", "Ocean" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": -1460, "y": 68, "z": 1256 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A strange little hamlet built by people who do not value pivacy. most of the houses here are missing wall, allowing anyone to clearly see inside."
+        ],
+        "photos": []
       }
     ]
   },
@@ -1034,13 +1077,13 @@
         "biomes": [ "River", "Taiga" ],
         "mineralSources": [],
         "lavaSource": false,
-        "rating": 2,
+        "rating": 3,
         "location": { "x": 3636, "y": 64, "z": -293 },
         "raidCount": -1,
         "netherPortalDetails": {
-          "netherLocation": [],
-          "overworldPortalType": "none",
-          "netherPortalType": "none"
+          "netherLocation": ["Endertribe Forest"],
+          "overworldPortalType": "fenced",
+          "netherPortalType": "covered"
         },
         "description": [
           "The people here have placed campfires all over their village. Those who have lived their lives here know the lay of the land likethe back of their hand, so they can easily discern outsiders by seeing who caught on fire."
@@ -1099,7 +1142,48 @@
   },
   {
     "regionName": "Pinball Ice Field",
-    "places": []
+    "places": [
+      {
+        "id": 52,
+        "name": "Cozy Snugg Village",
+        "type": "Village",
+        "baseStructureType": "House",
+        "biomes": [ "Taiga", "Cold Beach" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 2,
+        "location": { "x": 760, "y": 66, "z": 3542 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": ["Lava Curtain Forest"],
+          "overworldPortalType": "fenced",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "A village build on fertile ground sandwiched in-between two cold biomes."
+        ],
+        "photos": []
+      },
+      {
+        "id": 53,
+        "name": "Unnamed Village 2",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Snowy Plains" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 1220, "y": 66, "z": 3640 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [],
+        "photos": []
+      }
+    ]
   },
   {
     "regionName": "Respite-Bunflower Seaway",
@@ -1122,6 +1206,124 @@
         },
         "description": [
           "An ocean monument in the middle of the sea."
+        ],
+        "photos": []
+      }
+    ]
+  },
+  {
+    "regionName": "True Eastern Frontier",
+    "places": [
+      {
+        "id": 48,
+        "name": "Long Fall Cave",
+        "type": "Base",
+        "baseStructureType": "Artificial Cave",
+        "biomes": [ "Plains", "Cave" ],
+        "mineralSources": [ "Long Fall Cave" ],
+        "lavaSource": false,
+        "rating": 3,
+        "location": { "x": 5293, "y": 39, "z": 439 },
+        "raidCount": -1,
+        "netherPortalDetails": {
+          "netherLocation": ["Endertribe Forest"],
+          "overworldPortalType": "exposed",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "A large cave found under a repaired Nether Portal.",
+          "A sinkhole forms a natural entrance to the cave, a canal system linked to a bubble column elevator was planned to allow boats in and out of the cave, but it was ultimately scrapped."
+        ],
+        "photos": []
+      },
+      {
+        "id": 49,
+        "name": "Seagrassbar Village",
+        "type": "Village",
+        "baseStructureType": "None",
+        "biomes": [ "Plains", "Cold Ocean" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 0,
+        "location": { "x": 5188, "y": 66, "z": -363 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": [],
+          "overworldPortalType": "none",
+          "netherPortalType": "none"
+        },
+        "description": [
+          "A village located on a long, narrow island."
+        ],
+        "photos": []
+      },
+      {
+        "id": 50,
+        "name": "Creeper Arch Village",
+        "type": "Village",
+        "baseStructureType": "Artificial Cave",
+        "biomes": [ "Plains", "Beach" ],
+        "mineralSources": ["Mushroom Caves", "Mushroom Mines"],
+        "lavaSource": false,
+        "rating": 3,
+        "location": { "x": 4537, "y": 57, "z": -721 },
+        "raidCount": 1,
+        "netherPortalDetails": {
+          "netherLocation": ["Endertribe Forest"],
+          "overworldPortalType": "fenced",
+          "netherPortalType": "semi-covered"
+        },
+        "description": [
+          "A village built on top of the vast Mushroom Cave network and Mushroom Mines, providing the the village with ample resources. Food for the underground base is supplied  from underground farms. It is connected to the base in the Mushroom Mines via a rail line.",
+          "This village is the only place in the world with tamed Allays."
+        ],
+        "photos": []
+      },
+      {
+        "id": 51,
+        "name": "Mushroom Mines",
+        "type": "Base",
+        "baseStructureType": "Natural Caves",
+        "biomes": [ "Abandoned Mine" ],
+        "mineralSources": ["Mushroom Caves", "Mushroom Mines"],
+        "lavaSource": false,
+        "rating": 2,
+        "location": { "x": 4550, "y": 19, "z": -583 },
+        "raidCount": 1,
+        "netherPortalDetails": {
+          "netherLocation": ["Endertribe Forest"],
+          "overworldPortalType": "fenced",
+          "netherPortalType": "semi-covered"
+        },
+        "description": [
+          "A base established in the deepest part of the Mushroom Mines. It is connected to the base in Creeper Arch Village via a rail line. Being far from the surface, this base has underground tree and food farms to supply it with essential resources."
+        ],
+        "photos": []
+      }
+    ]
+  },
+  {
+    "regionName": "Hideaway Area",
+    "places": [
+      {
+        "id": 54,
+        "name": "Hideaway Outpost",
+        "type": "Base",
+        "baseStructureType": "House",
+        "biomes": [ "Cold Ocean" ],
+        "mineralSources": [],
+        "lavaSource": false,
+        "rating": 1,
+        "location": { "x": 290, "y": 80, "z": 5382 },
+        "raidCount": 0,
+        "netherPortalDetails": {
+          "netherLocation": ["Hideaway Fortress"],
+          "overworldPortalType": "covered",
+          "netherPortalType": "covered"
+        },
+        "description": [
+          "Serving as a connection between the Overworld and Hideaway Fortress in the Nether, this outpost's strange location floating above the ocean was the result of a blind portal connection from the Nether. It was built with whatever materials were on hand when it was established.",
+          "As it is the connection to the only Nether Fortress in the world, it serves as an important exporter of Blaze Rods."
         ],
         "photos": []
       }

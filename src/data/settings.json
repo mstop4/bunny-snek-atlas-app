@@ -1,9 +1,9 @@
 {
   "map": {
     "left": -2432,
-    "right": 4303,
+    "right": 6047,
     "top": -2688,
-    "bottom": 3823
+    "bottom": 5487
   },
 
   "photosBaseUrl": "https://bunny-snek-atlas-app.s3.ca-central-1.amazonaws.com/photos/",
